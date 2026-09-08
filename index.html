@@ -1,0 +1,2112 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pakanang Shop</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@500;600;700&family=Noto+Sans+Thai:wght@400;500;600;700&family=Kanit:wght@400;600;700&family=Mitr:wght@400;600;700&family=Prompt:wght@400;600;700&family=Chonburi&family=Pattaya&family=Itim&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0a0e18;
+    --ink-2:#0d1322;
+    --panel:#141b2c;
+    --panel-2:#1a2338;
+    --panel-hover:#1f2a44;
+    --border:rgba(212,175,106,0.22);
+    --border-soft:rgba(255,255,255,0.06);
+    --gold:#d4af6a;
+    --gold-bright:#f2cf8e;
+    --text:#eef1f8;
+    --text-muted:#8d96b3;
+    --text-faint:#5c6483;
+
+    --pyro:#f2622e;
+    --hydro:#3fa9dc;
+    --electro:#b57edc;
+    --cryo:#79e8f2;
+    --anemo:#5ecab0;
+    --geo:#f0c150;
+    --dendro:#a4d65e;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:
+      radial-gradient(ellipse 900px 500px at 15% -10%, rgba(63,169,220,0.10), transparent 60%),
+      radial-gradient(ellipse 700px 500px at 100% 10%, rgba(212,175,106,0.08), transparent 55%),
+      var(--ink);
+    color:var(--text);
+    font-family:'Prompt', sans-serif;
+    min-height:100vh;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.display{font-family:'Prompt', sans-serif;}
+
+  .wrap{max-width:1100px;margin:0 auto;padding:0 20px 100px;}
+
+  /* ---------- Header ---------- */
+  header{
+    padding:52px 20px 30px;
+    text-align:center;
+    position:relative;
+    border-radius:20px;
+    overflow:hidden;
+    isolation:isolate;
+  }
+  .header-bg{
+    position:absolute;inset:-20px;
+    background-image:var(--hbgimg);
+    background-size:cover;background-position:center;
+    filter:blur(var(--hbgblur, 26px)) saturate(1.1);
+    opacity:0.35;
+    z-index:0;
+    pointer-events:none;
+  }
+  .header-bg::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 700px 400px at 50% 0%, rgba(10,14,24,0.35), rgba(10,14,24,0.82));}
+  header > *{position:relative;z-index:1;}
+  .emblem{
+    width:64px;height:64px;margin:0 auto 18px;
+    position:relative;
+  }
+  .emblem svg{width:100%;height:100%;}
+  .emblem .ring{
+    animation:spin 40s linear infinite;
+    transform-origin:32px 32px;
+  }
+  @media (prefers-reduced-motion:reduce){ .emblem .ring{animation:none;} }
+  @keyframes spin{ to{ transform:rotate(360deg); } }
+
+  header h1{
+    font-size:clamp(26px,4vw,40px);
+    margin:0 0 8px;
+    font-weight:700;
+    background:linear-gradient(180deg, var(--gold-bright), var(--gold) 70%);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    letter-spacing:0.5px;
+  }
+  header p.sub{
+    color:var(--text-muted);
+    font-size:14.5px;
+    margin:0;
+    letter-spacing:0.3px;
+  }
+  .hairline{
+    width:70px;height:1px;margin:20px auto 0;
+    background:linear-gradient(90deg, transparent, var(--gold), transparent);
+    opacity:0.6;
+  }
+  #editHeaderBtn{
+    margin-top:16px;font-size:12px;color:var(--gold-bright);
+    background:transparent;border:1px solid var(--border);border-radius:999px;
+    padding:5px 14px;cursor:pointer;font-family:'Prompt', sans-serif;
+  }
+  #editHeaderBtn:hover{background:rgba(212,175,106,0.08);}
+
+  /* ---------- Rich text toolbar ---------- */
+  .rt-toolbar{display:flex;align-items:center;gap:8px;margin-bottom:6px;}
+  .rt-btn{
+    font-size:12px;border:1px solid var(--border-soft);background:var(--ink-2);color:var(--text-muted);
+    padding:5px 10px;border-radius:6px;cursor:pointer;font-family:'Prompt', sans-serif;
+  }
+  .rt-btn:hover{color:var(--gold-bright);border-color:var(--gold);}
+  .rt-btn.rt-bold-btn{font-weight:700;}
+  .rt-btn.active{background:var(--gold);color:#1a1305;border-color:var(--gold);}
+  .rt-color-wrap{display:flex;align-items:center;gap:5px;font-size:12px;color:var(--text-faint);}
+  .rt-hint{font-size:11px;color:var(--text-faint);margin:-6px 0 10px;line-height:1.5;}
+  .rt-editable{
+    width:100%;min-height:40px;background:var(--ink-2);border:1px solid var(--border-soft);
+    color:var(--text);border-radius:8px;padding:10px 11px;font-size:14px;
+    font-family:'Prompt', sans-serif;outline:none;line-height:1.5;
+  }
+  .rt-editable:focus{border-color:var(--gold);}
+  .rt-editable[data-empty="true"]::before{content:attr(data-placeholder);color:var(--text-faint);}
+  .rt-editable.rt-multiline{min-height:64px;}
+
+  /* ---------- Image upload ---------- */
+  .img-upload-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+  .img-upload-thumb{
+    display:none;max-width:100%;max-height:150px;border-radius:8px;margin-top:10px;
+    object-fit:cover;border:1px solid var(--border-soft);
+  }
+  .img-upload-status{font-size:11.5px;color:var(--text-faint);margin-top:6px;}
+
+  /* ---------- Multi-image gallery manager (admin) ---------- */
+  .gallery-thumbs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px;}
+  .gallery-thumb{
+    position:relative;width:72px;height:72px;border-radius:8px;overflow:hidden;
+    border:1px solid var(--border-soft);flex:0 0 auto;
+  }
+  .gallery-thumb img{width:100%;height:100%;object-fit:cover;display:block;}
+  .gallery-cover-badge{
+    position:absolute;top:2px;left:2px;background:rgba(212,175,106,0.9);color:#1a1305;
+    font-size:9px;padding:1px 5px;border-radius:4px;font-weight:700;
+  }
+  .gallery-thumb-controls{
+    position:absolute;inset:0;display:flex;align-items:flex-end;justify-content:space-between;
+    padding:3px;opacity:0;transition:opacity .15s ease;background:linear-gradient(0deg, rgba(0,0,0,0.65), transparent 60%);
+  }
+  .gallery-thumb:hover .gallery-thumb-controls{opacity:1;}
+  .gt-btn{
+    width:19px;height:19px;border-radius:5px;border:none;background:rgba(10,14,24,0.85);color:#fff;
+    font-size:10px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;
+  }
+  .gt-btn:disabled{opacity:0.3;cursor:default;}
+  .gt-btn.gt-danger{background:rgba(242,98,46,0.9);}
+  .gallery-empty{font-size:12px;color:var(--text-faint);padding:6px 0;}
+
+  /* ---------- Poster popup carousel ---------- */
+  .poster-nav{
+    position:absolute;top:50%;transform:translateY(-50%);
+    width:38px;height:38px;border-radius:50%;background:rgba(10,14,24,0.6);
+    border:1px solid var(--border);color:var(--text);
+    display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:18px;
+  }
+  .poster-nav:hover{background:rgba(10,14,24,0.85);border-color:var(--gold);}
+  .poster-nav.prev{left:10px;}
+  .poster-nav.next{right:10px;}
+  .poster-counter{
+    position:absolute;bottom:10px;left:50%;transform:translateX(-50%);
+    background:rgba(10,14,24,0.65);color:var(--text);font-size:11.5px;
+    padding:3px 10px;border-radius:999px;
+  }
+  .poster-loading{
+    position:absolute;inset:0;display:none;align-items:center;justify-content:center;
+    background:rgba(0,0,0,0.35);
+  }
+  .countdown-badge{
+    display:inline-flex;align-items:center;gap:4px;
+    background:rgba(242,98,46,0.14);color:#f2622e;border:1px solid rgba(242,98,46,0.4);
+    font-size:11.5px;font-weight:600;padding:3px 9px;border-radius:999px;
+    margin-top:8px;font-variant-numeric:tabular-nums;
+  }
+  input[type="range"]{
+    -webkit-appearance:none;appearance:none;width:100%;height:5px;border-radius:999px;
+    background:var(--ink-2);outline:none;cursor:pointer;
+  }
+  input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance:none;width:17px;height:17px;border-radius:50%;
+    background:var(--gold-bright);cursor:pointer;border:2px solid var(--ink);
+  }
+  input[type="range"]::-moz-range-thumb{
+    width:17px;height:17px;border-radius:50%;background:var(--gold-bright);cursor:pointer;border:2px solid var(--ink);
+  }
+  .range-row{display:flex;align-items:center;gap:10px;}
+  .range-row input[type="range"]{flex:1;}
+  .range-val{font-size:12.5px;color:var(--gold-bright);min-width:32px;text-align:right;font-family:'Prompt', sans-serif;}
+
+  /* ---------- Boot loader (hides default content flash while real data loads) ---------- */
+  .boot-loader{
+    position:fixed;inset:0;z-index:500;
+    background:var(--ink);
+    display:flex;align-items:center;justify-content:center;
+    transition:opacity .3s ease;
+  }
+  .boot-loader.hide{opacity:0;pointer-events:none;}
+  .boot-spinner{
+    width:36px;height:36px;border-radius:50%;
+    border:3px solid rgba(212,175,106,0.22);
+    border-top-color:var(--gold);
+    animation:boot-spin .8s linear infinite;
+  }
+  @keyframes boot-spin{ to{transform:rotate(360deg);} }
+
+  .toast-container{
+    position:fixed;top:16px;left:50%;transform:translateX(-50%);z-index:300;
+    display:flex;flex-direction:column;gap:8px;align-items:center;
+    pointer-events:none;width:100%;padding:0 16px;
+  }
+  .toast{
+    background:var(--panel-2);border:1px solid var(--border);color:var(--text);
+    padding:10px 20px;border-radius:16px;font-size:13.5px;
+    box-shadow:0 8px 24px rgba(0,0,0,0.45);
+    opacity:0;transform:translateY(-12px);
+    transition:opacity .25s ease, transform .25s ease;
+    display:flex;align-items:center;gap:8px;text-align:center;
+    max-width:min(420px, calc(100vw - 32px));
+  }
+  .toast.show{opacity:1;transform:translateY(0);}
+  .toast.success{border-color:#22c55e;color:#86efac;}
+  .toast.error{border-color:#f2622e;color:#ffb199;}
+
+  /* ---------- Category nav ---------- */
+  nav.cats{
+    display:flex;gap:8px;overflow-x:auto;
+    padding:22px 4px 8px;
+    scrollbar-width:none;
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+  nav.cats::-webkit-scrollbar{display:none;}
+  .cat-pill{
+    flex:0 0 auto;
+    display:flex;align-items:center;gap:7px;
+    padding:8px 15px;
+    border-radius:999px;
+    border:1px solid var(--border-soft);
+    background:var(--panel);
+    color:var(--text-muted);
+    font-size:13.5px;
+    cursor:pointer;
+    white-space:nowrap;
+    transition:all .18s ease;
+  }
+  .cat-pill:hover{border-color:var(--border);color:var(--text);}
+  .cat-pill.active{
+    background:var(--panel-2);
+    color:var(--text);
+    border-color:var(--el, var(--gold));
+    box-shadow:0 0 0 1px var(--el, var(--gold)) inset;
+  }
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--el,var(--gold));flex:0 0 auto;
+    box-shadow:0 0 8px var(--el,var(--gold));}
+
+  /* ---------- Section ---------- */
+  section.cat-block{margin-top:38px;}
+  .cat-head{
+    display:flex;align-items:center;justify-content:space-between;
+    margin-bottom:14px;
+  }
+  .cat-title{
+    display:flex;align-items:center;gap:10px;
+    font-size:19px;font-weight:600;
+  }
+  .cat-title .dot{width:10px;height:10px;}
+  .cat-count{color:var(--text-faint);font-size:13px;font-weight:400;font-family:'Prompt', sans-serif;}
+  .cat-admin-tools{display:flex;align-items:center;gap:6px;}
+  .reorder-btn{
+    width:26px;height:26px;border-radius:6px;border:1px solid var(--border-soft);
+    background:transparent;color:var(--text-muted);cursor:pointer;font-size:13px;
+    display:flex;align-items:center;justify-content:center;line-height:1;
+  }
+  .reorder-btn:hover:not(:disabled){color:var(--gold-bright);border-color:var(--gold);}
+  .reorder-btn:disabled{opacity:0.25;cursor:default;}
+
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(250px,1fr));
+    gap:14px;
+  }
+
+  .card{
+    position:relative;
+    background:var(--panel);
+    border:1px solid var(--border-soft);
+    border-radius:14px;
+    padding:0;
+    transition:border-color .2s ease, transform .2s ease, background .2s ease;
+    border-left:3px solid var(--el, var(--gold));
+    overflow:hidden;
+    isolation:isolate;
+  }
+  .card.has-poster{cursor:pointer;}
+  .card[draggable="true"]{cursor:grab;}
+  .card.dragging{opacity:0.4;cursor:grabbing;}
+  .card.drag-over{outline:2px dashed var(--gold-bright);outline-offset:3px;}
+  .drag-handle{
+    position:absolute;top:8px;right:8px;z-index:2;
+    width:24px;height:24px;border-radius:6px;
+    background:rgba(10,14,24,0.55);color:var(--text-faint);
+    display:flex;align-items:center;justify-content:center;
+    font-size:13px;cursor:grab;user-select:none;
+  }
+  .card.dragging .drag-handle{cursor:grabbing;}
+  .card-content{position:relative;z-index:1;padding:18px 18px 16px;}
+  .card:hover{border-color:var(--border);background:var(--panel-2);transform:translateY(-2px);}
+  .card-cover{
+    position:relative;width:100%;aspect-ratio:1/1;background:var(--panel-2);overflow:hidden;
+  }
+  .card-cover img{width:100%;height:100%;object-fit:cover;display:block;-webkit-user-drag:none;user-select:none;}
+  .cover-skeleton{
+    width:100%;height:100%;
+    background:linear-gradient(90deg, var(--panel) 25%, var(--panel-2) 50%, var(--panel) 75%);
+    background-size:200% 100%;
+    animation:cover-shimmer 1.4s infinite;
+  }
+  @keyframes cover-shimmer{ 0%{background-position:200% 0;} 100%{background-position:-200% 0;} }
+  .cover-badge{
+    position:absolute;right:8px;bottom:8px;font-size:10.5px;color:var(--text);
+    background:rgba(10,14,24,0.65);padding:3px 8px;border-radius:999px;
+  }
+  .card-head-row{
+    display:flex;align-items:flex-start;justify-content:space-between;gap:12px;
+    margin-bottom:6px;
+  }
+  .card h4{
+    margin:0;font-size:16px;font-weight:600;color:var(--text);
+    line-height:1.3;
+  }
+  .card p.desc{
+    margin:0 0 14px;font-size:13.5px;line-height:1.55;color:var(--text-muted);
+    min-height:20px;
+  }
+  .price-tag{
+    text-align:right;
+    flex-shrink:0;
+  }
+  .price-tag .num{
+    font-size:17px;font-weight:700;color:var(--gold-bright);
+  }
+  .price-tag .unit{
+    display:block;font-size:11px;color:var(--text-faint);margin-top:1px;
+  }
+
+  .card-foot{display:flex;gap:8px;margin-top:6px;}
+  .edit-btn,.del-btn{
+    font-size:12px;border:1px solid var(--border-soft);background:transparent;color:var(--text-muted);
+    padding:5px 10px;border-radius:7px;cursor:pointer;font-family:'Prompt', sans-serif;
+  }
+  .edit-btn:hover{color:var(--gold-bright);border-color:var(--gold);}
+  .del-btn:hover{color:#f2622e;border-color:#f2622e;}
+
+  .add-card{
+    display:flex;align-items:center;justify-content:center;
+    min-height:96px;
+    border:1px dashed var(--border);
+    border-radius:14px;
+    color:var(--text-faint);
+    cursor:pointer;
+    font-size:13.5px;
+    background:transparent;
+    transition:all .18s ease;
+  }
+  .add-card:hover{color:var(--gold-bright);border-color:var(--gold);background:rgba(212,175,106,0.04);}
+
+  .empty-note{
+    color:var(--text-faint);font-size:13.5px;padding:14px 0;
+  }
+
+  /* ---------- Admin bar / toggle ---------- */
+  .admin-fab{
+    position:fixed;right:20px;bottom:20px;
+    width:52px;height:52px;border-radius:50%;
+    background:var(--panel-2);
+    border:1px solid var(--border);
+    display:flex;align-items:center;justify-content:center;
+    cursor:pointer;z-index:50;
+    box-shadow:0 6px 24px rgba(0,0,0,0.4);
+    transition:transform .15s ease, border-color .15s ease;
+  }
+  .admin-fab:hover{transform:scale(1.06);border-color:var(--gold);}
+  .admin-fab svg{width:22px;height:22px;}
+  .contact-fab{
+    position:fixed;right:20px;bottom:82px;
+    width:52px;height:52px;border-radius:50%;
+    background:linear-gradient(135deg,#00b2ff,#006aff);
+    display:flex;align-items:center;justify-content:center;
+    cursor:pointer;z-index:50;text-decoration:none;
+    box-shadow:0 6px 20px rgba(0,106,255,0.45);
+    transition:transform .15s ease;
+  }
+  .contact-fab:hover{transform:scale(1.08);}
+  .contact-fab svg{width:26px;height:26px;}
+  .admin-banner{
+    position:sticky;top:0;z-index:40;
+    background:linear-gradient(90deg, rgba(212,175,106,0.16), rgba(212,175,106,0.05));
+    border-bottom:1px solid var(--border);
+    color:var(--gold-bright);
+    font-size:13px;
+    padding:9px 20px;
+    text-align:center;
+    display:none;
+  }
+  .admin-banner.show{display:block;}
+  .admin-banner button{
+    margin-left:12px;background:transparent;border:1px solid var(--border);color:var(--gold-bright);
+    border-radius:6px;padding:3px 10px;font-size:12px;cursor:pointer;font-family:'Prompt', sans-serif;
+  }
+
+  /* ---------- Modal ---------- */
+  .overlay{
+    position:fixed;inset:0;background:rgba(5,7,13,0.72);
+    display:none;align-items:center;justify-content:center;z-index:100;
+    padding:20px;backdrop-filter:blur(2px);
+  }
+  .overlay.show{display:flex;}
+  .modal{
+    background:var(--panel-2);
+    border:1px solid var(--border);
+    border-radius:16px;
+    width:100%;max-width:420px;
+    padding:26px 24px 22px;
+  }
+  .modal h3{margin:0 0 4px;font-size:18px;color:var(--gold-bright);}
+  .modal p.hint{margin:0 0 18px;font-size:12.5px;color:var(--text-faint);}
+  .field{margin-bottom:13px;}
+  .field label{display:block;font-size:12.5px;color:var(--text-muted);margin-bottom:6px;}
+  .field input, .field select, .field textarea{
+    width:100%;background:var(--ink-2);border:1px solid var(--border-soft);
+    color:var(--text);border-radius:8px;padding:10px 11px;font-size:14px;
+    font-family:'Prompt', sans-serif;outline:none;
+  }
+  .field input:focus, .field select:focus, .field textarea:focus{border-color:var(--gold);}
+  .field textarea{resize:vertical;min-height:56px;}
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .modal-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:18px;}
+  .btn{
+    padding:9px 16px;border-radius:8px;font-size:13.5px;cursor:pointer;font-family:'Prompt', sans-serif;
+    border:1px solid var(--border-soft);background:transparent;color:var(--text-muted);
+  }
+  .btn:hover{color:var(--text);border-color:var(--border);}
+  .btn-primary{
+    background:linear-gradient(180deg, var(--gold-bright), var(--gold));
+    color:#1a1305;border:none;font-weight:600;
+  }
+  .btn-primary:hover{filter:brightness(1.08);color:#1a1305;}
+  .btn-danger{border-color:rgba(242,98,46,0.4);color:#f2622e;}
+  .btn-danger:hover{border-color:#f2622e;}
+
+  .new-cat-toggle{
+    font-size:12px;color:var(--gold-bright);cursor:pointer;margin-top:2px;display:inline-block;
+    text-decoration:underline;text-underline-offset:3px;
+  }
+
+  footer{
+    text-align:center;padding:36px 20px 10px;color:var(--text-faint);font-size:12px;
+  }
+
+  .color-input{
+    -webkit-appearance:none;appearance:none;width:30px;height:30px;border:1px solid var(--border-soft);
+    border-radius:7px;padding:0;background:none;cursor:pointer;
+  }
+  .color-input::-webkit-color-swatch{border:none;border-radius:6px;}
+  .font-select{margin-top:8px;}
+  .style-inline{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+
+  /* ---------- Poster lightbox ---------- */
+  .poster-overlay{
+    position:fixed;inset:0;background:rgba(4,6,11,0.88);
+    display:none;align-items:center;justify-content:center;z-index:110;
+    padding:30px 20px;backdrop-filter:blur(3px);
+  }
+  .poster-overlay.show{display:flex;}
+  .poster-box{
+    max-width:680px;width:100%;
+    background:var(--panel-2);border:1px solid var(--border);
+    border-radius:16px;overflow:hidden;
+  }
+  .poster-box img{width:100%;display:block;max-height:78vh;object-fit:contain;background:#000;transition:opacity .15s ease;}
+  .poster-caption{padding:16px 18px 18px;}
+  .poster-caption h4{margin:0 0 4px;font-size:16px;color:var(--text);font-weight:600;}
+  .poster-caption .p{font-family:'Prompt', sans-serif;font-size:18px;font-weight:700;color:var(--gold-bright);}
+  .poster-close{
+    position:absolute;top:14px;right:18px;
+    background:rgba(10,14,24,0.6);border:1px solid var(--border-soft);color:var(--text);
+    width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:16px;z-index:111;
+  }
+  .poster-close:hover{border-color:var(--gold);color:var(--gold-bright);}
+
+  @media (max-width:520px){
+    .row2{grid-template-columns:1fr;}
+    header{padding:40px 16px 20px;}
+    .card-head-row{flex-direction:column;}
+    .price-tag{text-align:left;}
+  }
+</style>
+</head>
+<body>
+
+<div class="boot-loader" id="bootLoader"><div class="boot-spinner"></div></div>
+
+<div class="toast-container" id="toastContainer"></div>
+
+<div class="admin-banner" id="adminBanner">
+  โหมดแก้ไขเปิดอยู่ — คุณสามารถเพิ่ม แก้ไข หรือลบข้อมูลได้
+  <button id="changePwBtn">เปลี่ยนรหัสผ่าน</button>
+  <button id="exitAdminBtn">ออกจากโหมดแก้ไข</button>
+</div>
+
+<div class="wrap">
+  <header id="siteHeader">
+    <div class="header-bg" id="headerBg" style="display:none;"></div>
+    <div class="emblem">
+      <svg viewBox="0 0 64 64" fill="none">
+        <g class="ring">
+          <circle cx="32" cy="8" r="3.4" fill="#f2622e"/>
+          <circle cx="52.2" cy="18.9" r="3.4" fill="#3fa9dc"/>
+          <circle cx="52.2" cy="45.1" r="3.4" fill="#b57edc"/>
+          <circle cx="32" cy="56" r="3.4" fill="#79e8f2"/>
+          <circle cx="11.8" cy="45.1" r="3.4" fill="#5ecab0"/>
+          <circle cx="11.8" cy="18.9" r="3.4" fill="#a4d65e"/>
+        </g>
+        <circle cx="32" cy="32" r="12" fill="none" stroke="#d4af6a" stroke-width="1.4"/>
+        <circle cx="32" cy="32" r="4.5" fill="#f0c150"/>
+      </svg>
+    </div>
+    <h1 id="siteTitle" style="font-family:'Prompt', sans-serif;">ร้านรับบริการ Genshin Impact</h1>
+    <p class="sub" id="siteSub">รับเคลียร์เควส · ปั้นตัวละคร · ปั้นอาวุธ · เล่นเนื้อเรื่อง · ดูแลไอดี</p>
+    <button id="editHeaderBtn" style="display:none;">✎ แก้ไขหัวข้อร้าน</button>
+    <div class="hairline"></div>
+  </header>
+
+  <nav class="cats" id="catNav"></nav>
+
+  <div id="catBlocks"></div>
+
+  <div style="margin-top:34px;">
+    <button class="add-card" id="addCatBtn" style="display:none;">+ เพิ่มหมวดหมู่ใหม่</button>
+  </div>
+
+  <footer id="footerNote">
+    ราคาและรายละเอียดอาจมีการเปลี่ยนแปลงตามอัปเดตหรือกิจกรรมในเกม<br>
+    <a href="https://www.facebook.com/di.ar.753672" target="_blank" rel="noopener" style="color:var(--gold-bright);text-decoration:none;border-bottom:1px dotted var(--gold);">ติดต่อสอบถามรายละเอียด</a>
+    <div style="margin-top:10px;opacity:0.7;">Copyright © 2026 Pakanang. All rights reserved.</div>
+  </footer>
+</div>
+
+<a class="contact-fab" href="https://www.facebook.com/di.ar.753672" target="_blank" rel="noopener" title="ติดต่อสอบถาม">
+  <svg viewBox="0 0 36 36" fill="white"><path d="M18 2C9.6 2 3 8.2 3 16.4c0 4.6 2.1 8.7 5.4 11.4V34l5-2.7c1.3.4 2.7.6 4.1.6h.5c8.4 0 15-6.2 15-14.4C33 8.2 26.4 2 18 2zm1.5 19.4-3.8-4-7.4 4 8.1-8.6 3.9 4 7.3-4-8.1 8.6z"/></svg>
+</a>
+<div class="admin-fab" id="adminFab" title="โหมดแก้ไข">
+  <svg viewBox="0 0 24 24" fill="none" stroke="#d4af6a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path id="fabIconLock" d="M6 10V7a6 6 0 0 1 12 0v3M5 10h14v10H5z"/>
+    <path id="fabIconOpen" style="display:none" d="M6 10V7a6 6 0 0 1 10.4-4.1M5 10h14v10H5z"/>
+  </svg>
+</div>
+
+<!-- PIN modal -->
+<div class="overlay" id="pinOverlay">
+  <div class="modal">
+    <h3 id="pinTitle">ใส่รหัสผ่านเพื่อแก้ไข</h3>
+    <p class="hint" id="pinHint">ใส่รหัสผ่านแอดมินเพื่อเข้าสู่โหมดแก้ไขข้อมูล</p>
+    <div class="field">
+      <label id="pinLabel">รหัสผ่าน</label>
+      <input type="password" id="pinInput" placeholder="ใส่รหัสผ่าน">
+    </div>
+    <label style="display:flex;align-items:center;gap:7px;font-size:13px;color:var(--text-muted);margin:-6px 0 4px;cursor:pointer;">
+      <input type="checkbox" id="pinRemember" checked style="width:15px;height:15px;accent-color:var(--gold);">
+      จดจำการเข้าสู่ระบบ
+    </label>
+    <div class="modal-actions">
+      <button class="btn" id="pinCancel">ยกเลิก</button>
+      <button class="btn btn-primary" id="pinConfirm">เข้าสู่ระบบ</button>
+    </div>
+  </div>
+</div>
+
+<!-- Change password modal -->
+<div class="overlay" id="changePwOverlay">
+  <div class="modal">
+    <h3>เปลี่ยนรหัสผ่านแอดมิน</h3>
+    <p class="hint" id="changePwHint">ใส่รหัสผ่านเดิม และรหัสผ่านใหม่ที่ต้องการตั้ง</p>
+    <div class="field">
+      <label>รหัสผ่านเดิม</label>
+      <input type="password" id="oldPwInput" placeholder="รหัสผ่านปัจจุบัน">
+    </div>
+    <div class="field">
+      <label>รหัสผ่านใหม่</label>
+      <input type="password" id="newPwInput" placeholder="รหัสผ่านใหม่ (อย่างน้อย 6 ตัวอักษร)">
+    </div>
+    <div class="field">
+      <label>ยืนยันรหัสผ่านใหม่</label>
+      <input type="password" id="newPwInput2" placeholder="พิมพ์รหัสผ่านใหม่อีกครั้ง">
+    </div>
+    <div class="modal-actions">
+      <button class="btn" id="changePwCancel">ยกเลิก</button>
+      <button class="btn btn-primary" id="changePwSave">บันทึกรหัสใหม่</button>
+    </div>
+  </div>
+</div>
+
+<!-- Header edit modal -->
+<div class="overlay" id="headerOverlay">
+  <div class="modal" style="max-height:88vh;overflow-y:auto;max-width:460px;">
+    <h3>แก้ไขหัวข้อร้าน</h3>
+    <p class="hint">แก้ไขข้อความ ฟอนต์ และพื้นหลังของส่วนหัวเว็บ</p>
+
+    <div class="field">
+      <label>ฟอนต์ของหัวข้อ</label>
+      <select id="hdrFont">
+        <option value="'Prompt', sans-serif">Prompt (ค่าเริ่มต้น)</option>
+        <option value="'Noto Sans Thai', sans-serif">Noto Sans Thai</option>
+        <option value="'Noto Serif Thai', serif">Noto Serif Thai (หัวเรื่อง)</option>
+        <option value="'Kanit', sans-serif">Kanit</option>
+        <option value="'Mitr', sans-serif">Mitr (มน)</option>
+        <option value="'Chonburi', serif">Chonburi (ลายไทย)</option>
+        <option value="'Pattaya', sans-serif">Pattaya (ลายเส้น)</option>
+        <option value="'Itim', sans-serif">Itim (ลายมือ)</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label>ชื่อร้าน</label>
+      <div class="rt-toolbar" id="hdrTitleToolbar">
+        <button type="button" class="rt-btn rt-bold-btn" data-rt-bold>B ตัวหนา</button>
+        <span class="rt-color-wrap">สี <input type="color" class="color-input" data-rt-color value="#f2cf8e"></span>
+        <button type="button" class="rt-btn" data-rt-clear>ล้างรูปแบบ</button>
+      </div>
+      <div class="rt-editable" id="hdrTitleInput" contenteditable="true" data-placeholder="ชื่อร้าน"></div>
+    </div>
+
+    <div class="field">
+      <label>คำโปรย (บรรทัดเล็กใต้ชื่อร้าน)</label>
+      <div class="rt-toolbar" id="hdrSubToolbar">
+        <button type="button" class="rt-btn rt-bold-btn" data-rt-bold>B ตัวหนา</button>
+        <span class="rt-color-wrap">สี <input type="color" class="color-input" data-rt-color value="#8d96b3"></span>
+        <button type="button" class="rt-btn" data-rt-clear>ล้างรูปแบบ</button>
+      </div>
+      <div class="rt-editable" id="hdrSubInput" contenteditable="true" data-placeholder="คำโปรยสั้นๆ"></div>
+    </div>
+    <p class="rt-hint">เลือกคำที่ต้องการในกล่องข้อความ แล้วกดปุ่ม "ตัวหนา" หรือเลือกสี — กดปุ่มเดิมซ้ำเพื่อยกเลิก หรือกด "ล้างรูปแบบ" เพื่อคืนค่าปกติ</p>
+
+    <div class="field">
+      <label>รูปพื้นหลังแบบเบลอของหัวข้อ (อัปโหลดได้หลายรูป ไม่บังคับ)</label>
+      <div class="gallery-thumbs" id="hdrBgGallery"></div>
+      <div class="img-upload-row">
+        <input type="file" id="hdrBgFile" accept="image/*" style="display:none;">
+        <button type="button" class="btn" id="hdrBgPickBtn">📁 เพิ่มรูปภาพ</button>
+      </div>
+      <div class="img-upload-status" id="hdrBgStatus"></div>
+      <div class="field" style="margin-top:12px;margin-bottom:0;">
+        <label>ระดับความเบลอของพื้นหลัง</label>
+        <div class="range-row">
+          <input type="range" id="hdrBlurRange" min="0" max="100" value="65">
+          <span class="range-val" id="hdrBlurVal">65</span>
+        </div>
+      </div>
+      <div class="field" style="margin-top:12px;margin-bottom:0;">
+        <label>ระยะเวลาเลื่อนรูป</label>
+        <div class="range-row">
+          <input type="range" id="hdrBgIntervalRange" min="2" max="15" value="4">
+          <span class="range-val" id="hdrBgIntervalVal">4 วิ</span>
+        </div>
+      </div>
+      <div style="margin-top:14px;">
+        <button type="button" class="rt-btn rt-bold-btn" id="hdrBgAutoBtn">⟳ เลื่อนรูปอัตโนมัติ</button>
+      </div>
+    </div>
+
+    <div class="modal-actions">
+      <button class="btn" id="headerCancel">ยกเลิก</button>
+      <button class="btn btn-primary" id="headerSave">บันทึก</button>
+    </div>
+  </div>
+</div>
+
+<!-- Service modal -->
+<div class="overlay" id="svcOverlay">
+  <div class="modal" style="max-height:88vh;overflow-y:auto;">
+    <h3 id="svcModalTitle">เพิ่มบริการ</h3>
+    <p class="hint">กรอกรายละเอียดบริการ ราคา และหน่วยนับ</p>
+    <div class="field">
+      <label>ฟอนต์ (ใช้กับชื่อบริการ รายละเอียด และราคาทั้งหมด)</label>
+      <select id="svcFont" class="font-select">
+        <option value="">ฟอนต์เริ่มต้นของเว็บ</option>
+        <option value="'Noto Sans Thai', sans-serif">Noto Sans Thai (มาตรฐาน)</option>
+        <option value="'Noto Serif Thai', serif">Noto Serif Thai (หัวเรื่อง)</option>
+        <option value="'Kanit', sans-serif">Kanit</option>
+        <option value="'Prompt', sans-serif">Prompt</option>
+        <option value="'Mitr', sans-serif">Mitr (มน)</option>
+        <option value="'Chonburi', serif">Chonburi (ลายไทย)</option>
+        <option value="'Pattaya', sans-serif">Pattaya (ลายเส้น)</option>
+        <option value="'Itim', sans-serif">Itim (ลายมือ)</option>
+      </select>
+    </div>
+    <div class="field">
+      <label>หมวดหมู่</label>
+      <select id="svcCategory"></select>
+    </div>
+    <div class="field">
+      <label>ชื่อบริการ</label>
+      <div class="rt-toolbar" id="svcNameToolbar">
+        <button type="button" class="rt-btn rt-bold-btn" data-rt-bold>B ตัวหนา</button>
+        <span class="rt-color-wrap">สี <input type="color" class="color-input" data-rt-color value="#ffffff"></span>
+        <button type="button" class="rt-btn" data-rt-clear>ล้างรูปแบบ</button>
+      </div>
+      <div class="rt-editable" id="svcName" contenteditable="true" data-placeholder="เช่น ปั้นตัวละคร 5 ดาว"></div>
+    </div>
+    <div class="field">
+      <label>รายละเอียด</label>
+      <div class="rt-toolbar" id="svcDescToolbar">
+        <button type="button" class="rt-btn rt-bold-btn" data-rt-bold>B ตัวหนา</button>
+        <span class="rt-color-wrap">สี <input type="color" class="color-input" data-rt-color value="#ffffff"></span>
+        <button type="button" class="rt-btn" data-rt-clear>ล้างรูปแบบ</button>
+      </div>
+      <div class="rt-editable rt-multiline" id="svcDesc" contenteditable="true" data-placeholder="เช่น ปั้นเลเวล + อาวุธ + อาร์ติแฟกต์หลัก"></div>
+    </div>
+    <p class="rt-hint">เลือกคำที่ต้องการในกล่องข้อความ แล้วกดปุ่ม "ตัวหนา" หรือเลือกสี — กดปุ่มเดิมซ้ำเพื่อยกเลิก หรือกด "ล้างรูปแบบ" เพื่อคืนค่าปกติ</p>
+    <div class="field">
+      <label>ราคา / หน่วย</label>
+      <div class="rt-toolbar" id="svcPriceToolbar">
+        <button type="button" class="rt-btn rt-bold-btn" id="svcPriceBoldBtn">B ตัวหนา</button>
+        <span class="rt-color-wrap">สี <input type="color" class="color-input" id="svcPriceColor" value="#f2cf8e"></span>
+        <button type="button" class="rt-btn" id="clearPriceColor">ล้างรูปแบบ</button>
+      </div>
+      <div class="row2">
+        <input type="text" id="svcPrice" placeholder="เช่น 250 (เว้นว่างได้ถ้าไม่ระบุราคา)">
+        <input type="text" id="svcUnit" placeholder="บาท / ตัว / รอบ (เว้นว่างได้)">
+      </div>
+    </div>
+
+    <div class="field">
+      <label>ตัวจับเวลานับถอยหลัง (สำหรับโปรโมชั่นแบบจำกัดเวลา ไม่บังคับ)</label>
+      <div class="range-row" style="gap:8px;">
+        <input type="number" id="svcCountdownDays" min="0" step="0.5" placeholder="ใส่จำนวนวัน เช่น 3" style="flex:1;background:var(--ink-2);border:1px solid var(--border-soft);color:var(--text);border-radius:8px;padding:9px 11px;font-size:14px;font-family:'Prompt', sans-serif;">
+        <button type="button" class="rt-btn" id="svcCountdownSetBtn">⏱ ตั้งเวลาใหม่</button>
+      </div>
+      <div class="img-upload-status" id="svcCountdownStatus">ยังไม่ได้ตั้งเวลานับถอยหลัง</div>
+      <button type="button" class="rt-btn" id="svcCountdownClearBtn" style="margin-top:8px;display:none;">✕ ยกเลิกตัวจับเวลา</button>
+    </div>
+
+    <div class="field">
+      <label>รูปโปสเตอร์/ราคา — กดที่การ์ดเพื่อดูรูปเต็ม (อัปโหลดได้หลายรูป ไม่บังคับ)</label>
+      <div class="gallery-thumbs" id="svcPosterGallery"></div>
+      <div class="img-upload-row">
+        <input type="file" id="svcPosterFile" accept="image/*" style="display:none;">
+        <button type="button" class="btn" id="svcPosterPickBtn">📁 เพิ่มรูปภาพ</button>
+      </div>
+      <div class="img-upload-status" id="svcPosterStatus"></div>
+      <div class="field" style="margin-top:12px;margin-bottom:0;">
+        <label>ระยะเวลาเลื่อนรูป</label>
+        <div class="range-row">
+          <input type="range" id="svcPosterIntervalRange" min="2" max="15" value="4">
+          <span class="range-val" id="svcPosterIntervalVal">4 วิ</span>
+        </div>
+      </div>
+      <div style="margin-top:14px;">
+        <button type="button" class="rt-btn rt-bold-btn" id="svcPosterAutoBtn">⟳ เลื่อนรูปอัตโนมัติ</button>
+      </div>
+    </div>
+
+    <div class="modal-actions">
+      <button class="btn" id="svcCancel">ยกเลิก</button>
+      <button class="btn btn-primary" id="svcSave">บันทึก</button>
+    </div>
+  </div>
+</div>
+
+<!-- Poster lightbox -->
+<div class="poster-overlay" id="posterOverlay">
+  <button class="poster-close" id="posterClose">✕</button>
+  <div class="poster-box">
+    <div style="position:relative;">
+      <img id="posterImg" src="" alt="โปสเตอร์บริการ">
+      <div class="poster-loading" id="posterLoading"><div class="boot-spinner"></div></div>
+      <button class="poster-nav prev" id="posterPrev" style="display:none;">‹</button>
+      <button class="poster-nav next" id="posterNext" style="display:none;">›</button>
+      <span class="poster-counter" id="posterCounter" style="display:none;"></span>
+    </div>
+    <div class="poster-caption">
+      <h4 id="posterName"></h4>
+      <div class="p" id="posterPrice"></div>
+      <div class="countdown-badge" id="posterCountdown" style="display:none;"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Category modal -->
+<div class="overlay" id="catOverlay">
+  <div class="modal">
+    <h3 id="catModalTitle">เพิ่มหมวดหมู่ใหม่</h3>
+    <div class="field">
+      <label>ชื่อหมวดหมู่</label>
+      <div class="rt-toolbar" id="catNameToolbar">
+        <button type="button" class="rt-btn rt-bold-btn" data-rt-bold>B ตัวหนา</button>
+        <span class="rt-color-wrap">สี <input type="color" class="color-input" data-rt-color value="#ffffff"></span>
+        <button type="button" class="rt-btn" data-rt-clear>ล้างรูปแบบ</button>
+      </div>
+      <div class="rt-editable" id="catName" contenteditable="true" data-placeholder="เช่น ปั้นทีมสาย Abyss"></div>
+    </div>
+    <div class="field">
+      <label>สีประจำหมวด (ธาตุ)</label>
+      <select id="catColor">
+        <option value="pyro">ไพโร (แดง)</option>
+        <option value="hydro">ไฮโดร (ฟ้า)</option>
+        <option value="electro">อิเล็คโทร (ม่วง)</option>
+        <option value="cryo">ไครโย (ฟ้าอ่อน)</option>
+        <option value="anemo">อะนีโม (เขียวมิ้นต์)</option>
+        <option value="geo">เกโอ (เหลือง)</option>
+        <option value="dendro">เดนโดร (เขียว)</option>
+      </select>
+    </div>
+    <div class="modal-actions">
+      <button class="btn" id="catCancel">ยกเลิก</button>
+      <button class="btn btn-primary" id="catSave">บันทึก</button>
+    </div>
+  </div>
+</div>
+
+<!-- Firebase (replaces Claude's window.storage so this site works on real hosting like Netlify) -->
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script>
+const firebaseConfig = {
+  apiKey: "AIzaSyDha3iQsVH2vUDsNFgc1-79GoRcYB3re0A",
+  authDomain: "genshin-6ff80.firebaseapp.com",
+  projectId: "genshin-6ff80",
+  storageBucket: "genshin-6ff80.firebasestorage.app",
+  messagingSenderId: "118202962946",
+  appId: "1:118202962946:web:7790ef3fe52e51a770c31b",
+  measurementId: "G-8FX3E42VX8"
+};
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+
+// Thin shim so the rest of the app's storage calls stay unchanged —
+// each "key" becomes one Firestore document in the "shopData" collection.
+async function fbGet(key){
+  try{
+    const doc = await db.collection('shopData').doc(key).get();
+    return doc.exists ? { value: doc.data().value } : null;
+  }catch(e){
+    console.error('Firestore get error', key, e);
+    return null;
+  }
+}
+async function fbSet(key, value){
+  try{
+    await db.collection('shopData').doc(key).set({ value });
+    return { key, value };
+  }catch(e){
+    console.error('Firestore set error', key, e);
+    return null;
+  }
+}
+async function fbDelete(key){
+  try{ await db.collection('shopData').doc(key).delete(); }
+  catch(e){ console.error('Firestore delete error', key, e); }
+}
+</script>
+
+<script>
+const EL = {
+  pyro:'--pyro', hydro:'--hydro', electro:'--electro', cryo:'--cryo',
+  anemo:'--anemo', geo:'--geo', dendro:'--dendro'
+};
+
+// รหัสผ่านแอดมินเริ่มต้น — เปลี่ยนได้ทันทีหลังล็อกอินครั้งแรกผ่านปุ่ม "เปลี่ยนรหัสผ่าน"
+const DEFAULT_ADMIN_PASSWORD = 'pakanang';
+
+async function sha256Hex(text){
+  const enc = new TextEncoder().encode(text);
+  const buf = await crypto.subtle.digest('SHA-256', enc);
+  return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');
+}
+
+const DEFAULT_DATA = {
+  config: {
+    pinHash: null,
+    title: 'Pakanang Shop',
+    sub: 'รับเคลียร์เควส · ปั้นตัวละคร · ปั้นอาวุธ · เล่นเนื้อเรื่อง · ดูแลไอดี',
+    headerFont: "'Prompt', sans-serif",
+    headerBlur: 65,
+    headerBgImages: [],
+    headerAutoAdvance: false,
+    headerInterval: 4
+  },
+  categories: [
+    { id:'c1', name:'ปั้นตัวละคร', color:'geo' },
+    { id:'c2', name:'ปั้นอาวุธ', color:'pyro' },
+    { id:'c3', name:'เล่นเนื้อเรื่อง', color:'hydro' },
+    { id:'c4', name:'เคลียร์เควสกิจกรรม', color:'electro' },
+    { id:'c5', name:'ดูแลไอดี', color:'cryo' },
+  ],
+  services: [
+    { id:'s1', catId:'c1', name:'ปั้นตัวละคร 5 ดาว (ครบชุด)', desc:'เลเวล 90 + อาวุธ + อาร์ติแฟกต์หลัก + ปลดคอนสเตลเลชัน', price:250, unit:'บาท/ตัว' },
+    { id:'s2', catId:'c1', name:'ปั้นตัวละคร 4 ดาว', desc:'เลเวล 90 + ทาเลนต์หลัก', price:120, unit:'บาท/ตัว' },
+    { id:'s3', catId:'c2', name:'ปั้นอาวุธ 5 ดาว', desc:'รีไฟน์ตามต้องการ + เลเวลสูงสุด', price:150, unit:'บาท/ชิ้น' },
+    { id:'s4', catId:'c3', name:'เล่นเนื้อเรื่องหลัก (Archon Quest)', desc:'เคลียร์ตามบทที่ระบุ พร้อมเก็บไอเทมที่เกี่ยวข้อง', price:100, unit:'บาท/บท' },
+    { id:'s5', catId:'c4', name:'เคลียร์เควสกิจกรรมประจำเวอร์ชัน', desc:'เก็บของรางวัลกิจกรรมให้ครบก่อนหมดเวลา', price:80, unit:'บาท/กิจกรรม' },
+    { id:'s6', catId:'c5', name:'ดูแลไอดีรายวัน', desc:'เก็บเรซิน / คอมมิชชั่นรายวัน / ของขวัญเมล', price:300, unit:'บาท/เดือน' },
+  ]
+};
+
+let state = null;
+let isAdmin = false;
+let activeCat = 'all';
+let editingSvcId = null;
+let isNewSvcEntry = false;
+let headerBgImagesCache = []; // [{id, dataUrl}] all header background images, preloaded
+let headerBgCurrentIndex = 0;
+let headerBgTimer = null;
+const coverThumbCache = new Map(); // svcId:imgId -> dataUrl, for card cover thumbnails
+
+const STORAGE_KEY = 'genshin_shop_data';
+
+async function loadData(){
+  try{
+    const res = await fbGet(STORAGE_KEY);
+    if(res && res.value){
+      state = JSON.parse(res.value);
+    } else {
+      state = DEFAULT_DATA;
+    }
+  }catch(e){
+    state = DEFAULT_DATA;
+  }
+  if(!state.config.pinHash){
+    state.config.pinHash = await sha256Hex(DEFAULT_ADMIN_PASSWORD);
+    await saveData();
+  }
+
+  // One-time migration: upgrade any text still using the old **bold**/{{#hex:}} markup
+  // (from before the WYSIWYG editor) into real HTML, so it keeps displaying correctly.
+  let migrated = false;
+  if(looksLikeLegacyMarkup(state.config.title)){ state.config.title = legacyMarkupToHtml(state.config.title); migrated = true; }
+  if(looksLikeLegacyMarkup(state.config.sub)){ state.config.sub = legacyMarkupToHtml(state.config.sub); migrated = true; }
+  if(state.config.title === 'ร้านรับบริการ Genshin Impact'){ state.config.title = 'Pakanang Shop'; migrated = true; }
+  if(state.config.headerFont === "'Noto Serif Thai', serif"){ state.config.headerFont = "'Prompt', sans-serif"; migrated = true; }
+
+  // Migrate single header background image to the new multi-image array format
+  if(!state.config.headerBgImages){
+    state.config.headerBgImages = state.config.hasHeaderBg ? [{id:null}] : [];
+    migrated = true;
+  }
+  if(state.config.headerAutoAdvance === undefined){ state.config.headerAutoAdvance = false; migrated = true; }
+  if(state.config.headerInterval === undefined){ state.config.headerInterval = 4; migrated = true; }
+
+  (state.services || []).forEach(s=>{
+    if(looksLikeLegacyMarkup(s.name)){ s.name = legacyMarkupToHtml(s.name); migrated = true; }
+    if(looksLikeLegacyMarkup(s.desc)){ s.desc = legacyMarkupToHtml(s.desc); migrated = true; }
+    // Consolidate the brief name/desc/price-specific fonts back into one shared font
+    if(!s.font && (s.nameFont || s.descFont || s.priceFont)){
+      s.font = s.nameFont || s.descFont || s.priceFont;
+      migrated = true;
+    }
+    // Migrate single poster image to the new multi-image array format
+    if(!s.posterImages){
+      s.posterImages = s.hasPoster ? [{id:null}] : [];
+      migrated = true;
+    }
+    if(s.posterAutoAdvance === undefined){ s.posterAutoAdvance = false; migrated = true; }
+    if(s.posterInterval === undefined){ s.posterInterval = 4; migrated = true; }
+  });
+
+  // Ensure existing category names (previously plain text) are safe to render as HTML now
+  (state.categories || []).forEach(c=>{
+    const cleaned = sanitizeRichHtml(c.name, false);
+    if(cleaned !== c.name){ c.name = cleaned; migrated = true; }
+  });
+  if(migrated) await saveData();
+
+  // Eager-load all header background images (small, single global asset)
+  headerBgImagesCache = [];
+  for(const imgMeta of state.config.headerBgImages){
+    const dataUrl = await loadImageValue(headerBgImgKey(imgMeta.id));
+    if(dataUrl) headerBgImagesCache.push({ id: imgMeta.id, dataUrl });
+  }
+  if(headerBgImagesCache.length !== state.config.headerBgImages.length){
+    // some images were missing/deleted out-of-band — reconcile and save
+    state.config.headerBgImages = headerBgImagesCache.map(x=>({id:x.id}));
+    await saveData();
+  }
+  // Auto-unlock if this browser has a remembered login matching the current password
+  try{
+    const rememberedHash = localStorage.getItem('pk_admin_hash');
+    if(rememberedHash && rememberedHash === state.config.pinHash){
+      isAdmin = true;
+    } else if(rememberedHash){
+      localStorage.removeItem('pk_admin_hash'); // password changed since — stale, clear it
+    }
+  }catch(e){}
+
+  render();
+  hideBootLoader();
+}
+function hideBootLoader(){
+  const loader = document.getElementById('bootLoader');
+  if(!loader) return;
+  loader.classList.add('hide');
+  setTimeout(()=> loader.remove(), 350);
+}
+
+async function saveData(){
+  try{
+    await fbSet(STORAGE_KEY, JSON.stringify(state));
+  }catch(e){
+    console.error('บันทึกข้อมูลไม่สำเร็จ', e);
+  }
+}
+
+function uid(){ return Math.random().toString(36).slice(2,9); }
+
+/* ---------------- Image storage (separate keys, so the main data blob stays small) ---------------- */
+const HEADER_BG_KEY = 'genshin_header_bg_img';
+function posterKey(svcId, imgId){
+  return imgId ? `genshin_poster_img_${svcId}_${imgId}` : `genshin_poster_img_${svcId}`;
+}
+function headerBgImgKey(imgId){
+  return imgId ? `genshin_header_bg_img_${imgId}` : HEADER_BG_KEY;
+}
+
+async function loadImageValue(key){
+  try{
+    const res = await fbGet(key);
+    return res && res.value ? res.value : '';
+  }catch(e){ return ''; }
+}
+async function saveImageValue(key, dataUrl){
+  try{ await fbSet(key, dataUrl); return true; }
+  catch(e){ console.error('บันทึกรูปไม่สำเร็จ', e); return false; }
+}
+async function deleteImageValue(key){
+  try{ await fbDelete(key); }catch(e){ /* already gone, ignore */ }
+}
+
+// Reads a File, downsizes it, and returns a compressed base64 data URL (kept well under storage limits).
+function fileToDataUrl(file, maxDim=1280, quality=0.78){
+  return new Promise((resolve, reject)=>{
+    if(!file || !file.type || !file.type.startsWith('image/')){
+      reject(new Error('กรุณาเลือกไฟล์รูปภาพเท่านั้น')); return;
+    }
+    const reader = new FileReader();
+    reader.onerror = ()=> reject(new Error('อ่านไฟล์ไม่สำเร็จ'));
+    reader.onload = ()=>{
+      const img = new Image();
+      img.onerror = ()=> reject(new Error('ไม่สามารถเปิดไฟล์รูปนี้ได้'));
+      img.onload = ()=>{
+        let { width, height } = img;
+        if(width > maxDim || height > maxDim){
+          if(width >= height){ height = Math.round(height * maxDim / width); width = maxDim; }
+          else { width = Math.round(width * maxDim / height); height = maxDim; }
+        }
+        const canvas = document.createElement('canvas');
+        canvas.width = width; canvas.height = height;
+        canvas.getContext('2d').drawImage(img, 0, 0, width, height);
+        try{
+          resolve(canvas.toDataURL('image/jpeg', quality));
+        }catch(e){
+          reject(new Error('ไม่สามารถประมวลผลรูปนี้ได้'));
+        }
+      };
+      img.src = reader.result;
+    };
+    reader.readAsDataURL(file);
+  });
+}
+
+function elColorVar(colorKey){
+  return `var(${EL[colorKey] || '--gold'})`;
+}
+function svcNameStyleParts(s){
+  return s.font ? [`font-family:${s.font}`] : [];
+}
+function svcDescStyleParts(s){
+  return s.font ? [`font-family:${s.font}`] : [];
+}
+function svcPriceFont(s){
+  return s.font || "'Prompt', sans-serif";
+}
+function svcPriceStyleParts(s){
+  const parts = [`font-family:${svcPriceFont(s)}`];
+  if(s.priceBold) parts.push('font-weight:700');
+  if(s.priceColor) parts.push(`color:${s.priceColor}`);
+  return parts;
+}
+function updateSvcPricePreview(){
+  const priceInput = document.getElementById('svcPrice');
+  const unitInput = document.getElementById('svcUnit');
+  const bold = document.getElementById('svcPriceBoldBtn').classList.contains('active');
+  const color = priceColorCleared ? '' : document.getElementById('svcPriceColor').value;
+  [priceInput, unitInput].forEach(el=>{
+    el.style.fontWeight = bold ? '700' : '';
+    el.style.color = color || '';
+  });
+}
+function formatPriceDisplay(price){
+  const str = String(price ?? '').trim();
+  if(str === '') return '';
+  if(/^\d+(\.\d+)?$/.test(str)) return Number(str).toLocaleString('th-TH');
+  return escapeHtml(str); // e.g. "-", "สอบถาม", "โปรโมชั่น" etc.
+}
+
+/* ---------------- Countdown timers ---------------- */
+function formatCountdown(ms){
+  if(ms <= 0) return 'หมดเวลาแล้ว';
+  const totalSec = Math.floor(ms/1000);
+  const days = Math.floor(totalSec / 86400);
+  const hours = Math.floor((totalSec % 86400)/3600);
+  const mins = Math.floor((totalSec % 3600)/60);
+  const secs = totalSec % 60;
+  const pad = n => String(n).padStart(2,'0');
+  return days>0 ? `${days} วัน ${pad(hours)}:${pad(mins)}:${pad(secs)}` : `${pad(hours)}:${pad(mins)}:${pad(secs)}`;
+}
+function tickCountdowns(){
+  document.querySelectorAll('[data-countdown-end]').forEach(el=>{
+    const end = Number(el.dataset.countdownEnd);
+    const remain = end - Date.now();
+    el.textContent = remain > 0 ? `⏱ ${formatCountdown(remain)}` : '⏱ หมดโปรฯแล้ว';
+  });
+}
+setInterval(tickCountdowns, 1000);
+
+/* ---------------- Render ---------------- */
+function render(){
+  const titleEl = document.getElementById('siteTitle');
+  const subEl = document.getElementById('siteSub');
+  const font = state.config.headerFont || "'Prompt', sans-serif";
+  titleEl.style.fontFamily = font;
+  titleEl.innerHTML = state.config.title || '';
+  subEl.innerHTML = state.config.sub || '';
+
+  applyHeaderBgFrame();
+  if(headerBgTimer){ clearInterval(headerBgTimer); headerBgTimer = null; }
+  if(headerBgImagesCache.length > 1 && state.config.headerAutoAdvance){
+    const intervalMs = (state.config.headerInterval || 4) * 1000;
+    headerBgTimer = setInterval(()=>{
+      headerBgCurrentIndex = (headerBgCurrentIndex + 1) % headerBgImagesCache.length;
+      applyHeaderBgFrame();
+    }, intervalMs);
+  }
+
+  const banner = document.getElementById('adminBanner');
+  banner.classList.toggle('show', isAdmin);
+  document.getElementById('fabIconLock').style.display = isAdmin ? 'none' : 'block';
+  document.getElementById('fabIconOpen').style.display = isAdmin ? 'block' : 'none';
+  document.getElementById('addCatBtn').style.display = isAdmin ? 'flex' : 'none';
+  document.getElementById('editHeaderBtn').style.display = isAdmin ? 'inline-block' : 'none';
+
+  renderNav();
+  renderBlocks();
+  loadCardCoverThumbnails();
+  renderSvcCategoryOptions();
+  tickCountdowns();
+}
+
+function applyHeaderBgFrame(){
+  const hbg = document.getElementById('headerBg');
+  if(headerBgImagesCache.length === 0){
+    hbg.style.display = 'none';
+    return;
+  }
+  hbg.style.display = 'block';
+  const current = headerBgImagesCache[headerBgCurrentIndex % headerBgImagesCache.length];
+  hbg.style.setProperty('--hbgimg', `url('${current.dataUrl.replace(/'/g,'')}')`);
+  const blurPx = Math.round(((state.config.headerBlur ?? 65) / 100) * 40);
+  hbg.style.setProperty('--hbgblur', `${blurPx}px`);
+}
+
+function renderNav(){
+  const nav = document.getElementById('catNav');
+  let html = `<div class="cat-pill ${activeCat==='all'?'active':''}" data-cat="all">ทั้งหมด</div>`;
+  state.categories.forEach(c=>{
+    html += `<div class="cat-pill ${activeCat===c.id?'active':''}" data-cat="${c.id}" style="--el:${elColorVar(c.color)}">
+      <span class="dot" style="--el:${elColorVar(c.color)}"></span>${c.name}
+    </div>`;
+  });
+  nav.innerHTML = html;
+  nav.querySelectorAll('.cat-pill').forEach(el=>{
+    el.addEventListener('click', ()=>{ activeCat = el.dataset.cat; render(); });
+  });
+}
+
+function renderBlocks(){
+  const container = document.getElementById('catBlocks');
+  const cats = activeCat==='all' ? state.categories : state.categories.filter(c=>c.id===activeCat);
+  let html = '';
+  cats.forEach(cat=>{
+    const idx = state.categories.findIndex(c=>c.id===cat.id);
+    const lastIdx = state.categories.length - 1;
+    const svcs = state.services.filter(s=>s.catId===cat.id);
+    html += `<section class="cat-block">
+      <div class="cat-head">
+        <div class="cat-title">
+          <span class="dot" style="--el:${elColorVar(cat.color)}"></span>
+          ${cat.name}
+          <span class="cat-count">(${svcs.length})</span>
+        </div>
+        ${isAdmin ? `<div class="cat-admin-tools">
+          <button class="reorder-btn" data-moveup="${cat.id}" ${idx===0?'disabled':''} title="ย้ายขึ้น">↑</button>
+          <button class="reorder-btn" data-movedown="${cat.id}" ${idx===lastIdx?'disabled':''} title="ย้ายลง">↓</button>
+          <button class="edit-btn" data-editcat="${cat.id}">แก้ไข</button>
+          <button class="del-btn" data-delcat="${cat.id}">ลบหมวดนี้</button>
+        </div>` : ''}
+      </div>
+      <div class="grid">`;
+    if(svcs.length===0){
+      html += `<div class="empty-note">ยังไม่มีบริการในหมวดนี้${isAdmin?' — กด “+ เพิ่มบริการ” ด้านล่าง':''}</div>`;
+    } else {
+      svcs.forEach(s=>{
+        const nameStyleParts = svcNameStyleParts(s);
+        const descStyleParts = svcDescStyleParts(s);
+
+        const hasPoster = !!(s.posterImages && s.posterImages.length);
+        const imgCount = hasPoster ? s.posterImages.length : 0;
+        html += `<div class="card ${hasPoster?'has-poster':''}" style="--el:${elColorVar(cat.color)}" data-svc-id="${s.id}" data-cat-id="${cat.id}" ${hasPoster?`data-poster="${s.id}"`:''}>
+          ${isAdmin ? `<div class="drag-handle" draggable="true" data-drag-svc="${s.id}" data-drag-cat="${cat.id}" title="ลากเพื่อสลับตำแหน่งในหมวดนี้">⠿</div>` : ''}
+          ${hasPoster ? `<div class="card-cover" data-cover-load="${s.id}">
+            <div class="cover-skeleton"></div>
+            ${imgCount>1 ? `<span class="cover-badge">🖼 ${imgCount} รูป</span>` : `<span class="cover-badge">🔍 ดูรูปเต็ม</span>`}
+          </div>` : ''}
+          <div class="card-content">
+            <div class="card-head-row">
+              <h4 style="${nameStyleParts.join(';')}">${s.name}</h4>
+              ${(formatPriceDisplay(s.price) || s.unit) ? `<div class="price-tag">
+                <span class="num" style="${svcPriceStyleParts(s).join(';')}">${formatPriceDisplay(s.price)}</span>
+                <span class="unit" style="${svcPriceStyleParts(s).join(';')}">${escapeHtml(s.unit||'')}</span>
+              </div>` : ''}
+            </div>
+            ${s.countdownEndsAt && s.countdownEndsAt > Date.now() ? `<div class="countdown-badge" style="margin-top:0;margin-bottom:10px;" data-countdown-end="${s.countdownEndsAt}">⏱ --:--:--</div>` : ''}
+            <p class="desc" style="${descStyleParts.join(';')}">${s.desc||''}</p>
+            ${isAdmin ? `<div class="card-foot" style="margin-top:8px;">
+              <button class="edit-btn" data-edit="${s.id}">แก้ไข</button>
+              <button class="del-btn" data-del="${s.id}">ลบ</button>
+            </div>` : ''}
+          </div>
+        </div>`;
+      });
+    }
+    if(isAdmin){
+      html += `<div class="add-card" data-addto="${cat.id}">+ เพิ่มบริการ</div>`;
+    }
+    html += `</div></section>`;
+  });
+  container.innerHTML = html;
+
+  container.querySelectorAll('[data-addto]').forEach(el=>{
+    el.addEventListener('click', ()=>openSvcModal(null, el.dataset.addto));
+  });
+  container.querySelectorAll('[data-edit]').forEach(el=>{
+    el.addEventListener('click', (e)=>{ e.stopPropagation(); openSvcModal(el.dataset.edit); });
+  });
+  container.querySelectorAll('[data-del]').forEach(el=>{
+    el.addEventListener('click', (e)=>{ e.stopPropagation(); deleteService(el.dataset.del); });
+  });
+  container.querySelectorAll('[data-delcat]').forEach(el=>{
+    el.addEventListener('click', ()=>deleteCategory(el.dataset.delcat));
+  });
+  container.querySelectorAll('[data-editcat]').forEach(el=>{
+    el.addEventListener('click', ()=>openCatModal(el.dataset.editcat));
+  });
+  container.querySelectorAll('[data-moveup]').forEach(el=>{
+    el.addEventListener('click', ()=>moveCategory(el.dataset.moveup, -1));
+  });
+  container.querySelectorAll('[data-movedown]').forEach(el=>{
+    el.addEventListener('click', ()=>moveCategory(el.dataset.movedown, 1));
+  });
+  container.querySelectorAll('[data-poster]').forEach(el=>{
+    el.addEventListener('click', (e)=>{
+      if(e.target.closest('.edit-btn, .del-btn, .drag-handle')) return;
+      openPoster(el.dataset.poster);
+    });
+  });
+
+  if(isAdmin) setupCardDragReorder(container);
+}
+
+/* ---------------- Service card drag-to-reorder (within same category only) ---------------- */
+let dragSvcId = null;
+let dragCatId = null;
+
+function setupCardDragReorder(container){
+  container.querySelectorAll('[data-drag-svc]').forEach(handle=>{
+    handle.addEventListener('dragstart', (e)=>{
+      dragSvcId = handle.dataset.dragSvc;
+      dragCatId = handle.dataset.dragCat;
+      e.dataTransfer.effectAllowed = 'move';
+      try{ e.dataTransfer.setData('text/plain', dragSvcId); }catch(err){}
+      const card = handle.closest('.card');
+      if(card) card.classList.add('dragging');
+    });
+    handle.addEventListener('dragend', ()=>{
+      container.querySelectorAll('.card.dragging').forEach(el=>el.classList.remove('dragging'));
+      container.querySelectorAll('.card.drag-over').forEach(el=>el.classList.remove('drag-over'));
+      dragSvcId = null;
+      dragCatId = null;
+    });
+  });
+
+  container.querySelectorAll('.card[data-svc-id]').forEach(card=>{
+    card.addEventListener('dragover', (e)=>{
+      if(!dragSvcId || card.dataset.catId !== dragCatId) return;
+      e.preventDefault();
+      e.dataTransfer.dropEffect = 'move';
+      if(card.dataset.svcId !== dragSvcId) card.classList.add('drag-over');
+    });
+    card.addEventListener('dragleave', ()=>{
+      card.classList.remove('drag-over');
+    });
+    card.addEventListener('drop', async (e)=>{
+      e.preventDefault();
+      card.classList.remove('drag-over');
+      const targetId = card.dataset.svcId;
+      if(!dragSvcId || card.dataset.catId !== dragCatId || targetId === dragSvcId) return;
+      await reorderServiceDrop(dragSvcId, targetId);
+    });
+  });
+}
+
+async function reorderServiceDrop(draggedId, targetId){
+  const dragged = state.services.find(s=>s.id===draggedId);
+  const target = state.services.find(s=>s.id===targetId);
+  if(!dragged || !target || dragged.catId !== target.catId || dragged.id === target.id) return;
+  const fromIdx = state.services.indexOf(dragged);
+  state.services.splice(fromIdx, 1);
+  const toIdx = state.services.indexOf(target);
+  state.services.splice(toIdx, 0, dragged);
+  await saveData();
+  render();
+}
+
+async function moveCategory(id, dir){
+  const idx = state.categories.findIndex(c=>c.id===id);
+  const swapIdx = idx + dir;
+  if(idx<0 || swapIdx<0 || swapIdx>=state.categories.length) return;
+  const tmp = state.categories[idx];
+  state.categories[idx] = state.categories[swapIdx];
+  state.categories[swapIdx] = tmp;
+  await saveData();
+  render();
+}
+
+let posterImagesList = [];   // [{id}] metadata list for the currently open popup
+let posterCurrentIndex = 0;
+let posterActiveSvcId = null;
+const posterImageCache = new Map(); // svcId:imgId -> dataUrl
+
+async function openPoster(svcId){
+  const s = state.services.find(x=>x.id===svcId);
+  if(!s || !s.posterImages || !s.posterImages.length) return;
+  posterActiveSvcId = svcId;
+  posterImagesList = s.posterImages;
+  posterCurrentIndex = 0;
+
+  const nameEl = document.getElementById('posterName');
+  const priceEl = document.getElementById('posterPrice');
+  nameEl.innerHTML = s.name;
+  nameEl.style.cssText = svcNameStyleParts(s).join(';');
+  const priceText = `${formatPriceDisplay(s.price)} ${s.unit||''}`.trim();
+  priceEl.textContent = priceText;
+  priceEl.style.display = priceText ? 'block' : 'none';
+  priceEl.style.cssText += ';' + svcPriceStyleParts(s).join(';');
+
+  const countdownEl = document.getElementById('posterCountdown');
+  if(s.countdownEndsAt && s.countdownEndsAt > Date.now()){
+    countdownEl.style.display = 'inline-flex';
+    countdownEl.dataset.countdownEnd = s.countdownEndsAt;
+    countdownEl.textContent = '⏱ --:--:--';
+  } else {
+    countdownEl.style.display = 'none';
+    delete countdownEl.dataset.countdownEnd;
+  }
+  tickCountdowns();
+
+  const showNav = posterImagesList.length > 1;
+  document.getElementById('posterPrev').style.display = showNav ? 'flex' : 'none';
+  document.getElementById('posterNext').style.display = showNav ? 'flex' : 'none';
+  document.getElementById('posterCounter').style.display = showNav ? 'block' : 'none';
+
+  document.getElementById('posterOverlay').classList.add('show');
+  await showPosterFrame(0);
+  // Note: navigation here is manual (click ‹ ›) — auto-advance only happens on the homepage card.
+}
+
+async function showPosterFrame(index){
+  const total = posterImagesList.length;
+  posterCurrentIndex = ((index % total) + total) % total;
+  const imgMeta = posterImagesList[posterCurrentIndex];
+  const img = document.getElementById('posterImg');
+  const loading = document.getElementById('posterLoading');
+  document.getElementById('posterCounter').textContent = `${posterCurrentIndex+1} / ${total}`;
+  const cacheKey = `${posterActiveSvcId}:${imgMeta.id}`;
+  let dataUrl = posterImageCache.get(cacheKey);
+  if(!dataUrl){
+    loading.style.display = 'flex';
+    img.style.opacity = '0.2';
+    dataUrl = await loadImageValue(posterKey(posterActiveSvcId, imgMeta.id));
+    if(dataUrl) posterImageCache.set(cacheKey, dataUrl);
+  }
+  if(dataUrl){
+    img.src = dataUrl;
+    img.alt = 'โปสเตอร์บริการ';
+  }
+  loading.style.display = 'none';
+  img.style.opacity = '1';
+}
+function advancePoster(dir){ showPosterFrame(posterCurrentIndex + dir); }
+
+document.getElementById('posterPrev').addEventListener('click', ()=> advancePoster(-1));
+document.getElementById('posterNext').addEventListener('click', ()=> advancePoster(1));
+
+function closePoster(){
+  document.getElementById('posterOverlay').classList.remove('show');
+}
+document.getElementById('posterClose').addEventListener('click', closePoster);
+document.getElementById('posterOverlay').addEventListener('click', (e)=>{
+  if(e.target.id === 'posterOverlay') closePoster();
+});
+
+const cardAutoTimers = new Map(); // svcId -> intervalId, for homepage card auto-advance
+
+async function loadCardCoverThumbnails(){
+  cardAutoTimers.forEach(t => clearInterval(t));
+  cardAutoTimers.clear();
+
+  const nodes = document.querySelectorAll('[data-cover-load]');
+  for(const node of nodes){
+    const svcId = node.dataset.coverLoad;
+    const svc = state.services.find(s=>s.id===svcId);
+    if(!svc || !svc.posterImages || !svc.posterImages.length) continue;
+
+    if(svc.posterAutoAdvance && svc.posterImages.length > 1){
+      const frames = [];
+      for(const meta of svc.posterImages){
+        const cacheKey = `${svcId}:${meta.id}`;
+        let dataUrl = coverThumbCache.get(cacheKey);
+        if(!dataUrl){
+          dataUrl = await loadImageValue(posterKey(svcId, meta.id));
+          if(dataUrl) coverThumbCache.set(cacheKey, dataUrl);
+        }
+        if(dataUrl) frames.push(dataUrl);
+      }
+      if(!frames.length || !document.body.contains(node)) continue;
+      let frameIdx = 0;
+      const badge = node.querySelector('.cover-badge');
+      const drawFrame = ()=>{
+        node.innerHTML = `<img src="${frames[frameIdx]}" alt="">`;
+        if(badge) node.appendChild(badge);
+      };
+      drawFrame();
+      if(frames.length > 1){
+        const timer = setInterval(()=>{
+          if(!document.body.contains(node)){ clearInterval(timer); cardAutoTimers.delete(svcId); return; }
+          frameIdx = (frameIdx + 1) % frames.length;
+          drawFrame();
+        }, (svc.posterInterval || 4) * 1000);
+        cardAutoTimers.set(svcId, timer);
+      }
+    } else {
+      const coverMeta = svc.posterImages[0];
+      const cacheKey = `${svcId}:${coverMeta.id}`;
+      let dataUrl = coverThumbCache.get(cacheKey);
+      if(!dataUrl){
+        dataUrl = await loadImageValue(posterKey(svcId, coverMeta.id));
+        if(dataUrl) coverThumbCache.set(cacheKey, dataUrl);
+      }
+      if(dataUrl && document.body.contains(node)){
+        const badge = node.querySelector('.cover-badge');
+        node.innerHTML = `<img src="${dataUrl}" alt="">`;
+        if(badge) node.appendChild(badge);
+      }
+    }
+  }
+}
+
+function renderSvcCategoryOptions(){
+  const sel = document.getElementById('svcCategory');
+  sel.innerHTML = state.categories.map(c=>`<option value="${c.id}">${escapeHtml(stripHtml(c.name))}</option>`).join('');
+}
+
+/* ---------------- Rich text (WYSIWYG bold / color) ---------------- */
+// Fields are contenteditable divs; toolbar buttons use the browser's native
+// bold/color toggling (document.execCommand) so clicking again reliably undoes it.
+// On save, the resulting HTML is sanitized down to a small safe whitelist.
+
+function sanitizeRichHtml(html, allowBreaks){
+  const container = document.createElement('div');
+  container.innerHTML = html;
+  function walk(node){
+    let out = '';
+    node.childNodes.forEach(child=>{
+      if(child.nodeType === Node.TEXT_NODE){
+        out += escapeHtml(child.textContent);
+      } else if(child.nodeType === Node.ELEMENT_NODE){
+        const tag = child.tagName;
+        if(tag === 'B' || tag === 'STRONG'){
+          out += `<strong>${walk(child)}</strong>`;
+        } else if(tag === 'BR'){
+          if(allowBreaks) out += '<br>';
+        } else if(tag === 'DIV' || tag === 'P'){
+          const inner = walk(child);
+          if(allowBreaks && out) out += '<br>';
+          out += inner;
+        } else if(tag === 'SPAN' || tag === 'FONT'){
+          let color = (child.style && child.style.color) || child.getAttribute?.('color') || '';
+          color = color.trim();
+          const weight = (child.style && child.style.fontWeight) || '';
+          const isBold = weight === 'bold' || weight === 'bolder' || (/^\d+$/.test(weight) && parseInt(weight,10) >= 600);
+          let inner = walk(child);
+          if(isBold) inner = `<strong>${inner}</strong>`;
+          if(color && /^(#[0-9a-fA-F]{3,8}|rgb\([\d,\s.]+\))$/.test(color)){
+            out += `<span style="color:${color}">${inner}</span>`;
+          } else {
+            out += inner;
+          }
+        } else {
+          out += walk(child);
+        }
+      }
+    });
+    return out;
+  }
+  return walk(container).replace(/(<br>\s*){3,}/g, '<br><br>').trim();
+}
+
+// One-time migration for content saved under the old **bold** / {{#hex:text}} markup system.
+function legacyMarkupToHtml(raw){
+  return legacyParse(String(raw), true);
+}
+function legacyParse(text, allowBold){
+  const regex = allowBold
+    ? /\*\*([\s\S]+?)\*\*|\{\{(#[0-9a-fA-F]{3,8}):([\s\S]+?)\}\}/g
+    : /\{\{(#[0-9a-fA-F]{3,8}):([\s\S]+?)\}\}/g;
+  let result = '', lastIndex = 0, m;
+  while((m = regex.exec(text))){
+    result += escapeHtml(text.slice(lastIndex, m.index));
+    if(allowBold && m[1] !== undefined){
+      result += `<strong>${legacyParse(m[1], false)}</strong>`;
+    } else {
+      const colorIdx = allowBold ? 2 : 1;
+      const textIdx = allowBold ? 3 : 2;
+      result += `<span style="color:${m[colorIdx]}">${escapeHtml(m[textIdx])}</span>`;
+    }
+    lastIndex = regex.lastIndex;
+  }
+  result += escapeHtml(text.slice(lastIndex));
+  return result;
+}
+function looksLikeLegacyMarkup(str){
+  return typeof str === 'string' && (/\*\*[\s\S]+?\*\*/.test(str) || /\{\{#[0-9a-fA-F]{3,8}:/.test(str));
+}
+
+function setEditableContent(field, html){
+  field.innerHTML = html || '';
+  field.dataset.empty = field.textContent.trim() === '' ? 'true' : 'false';
+}
+
+function setupRichEditor(fieldId, toolbarId, allowBreaks){
+  const field = document.getElementById(fieldId);
+  const toolbar = document.getElementById(toolbarId);
+  const boldBtn = toolbar.querySelector('[data-rt-bold]');
+  const colorInput = toolbar.querySelector('[data-rt-color]');
+  const clearBtn = toolbar.querySelector('[data-rt-clear]');
+
+  field.addEventListener('input', ()=>{
+    field.dataset.empty = field.textContent.trim() === '' ? 'true' : 'false';
+  });
+
+  boldBtn.addEventListener('mousedown', e => e.preventDefault()); // keep selection inside the field
+  boldBtn.addEventListener('click', ()=>{
+    field.focus();
+    document.execCommand('bold');
+    field.dataset.empty = field.textContent.trim() === '' ? 'true' : 'false';
+  });
+
+  let savedRange = null;
+  colorInput.addEventListener('mousedown', ()=>{
+    const sel = window.getSelection();
+    savedRange = (sel.rangeCount > 0 && field.contains(sel.anchorNode)) ? sel.getRangeAt(0).cloneRange() : null;
+  });
+  colorInput.addEventListener('change', ()=>{
+    field.focus();
+    if(savedRange){
+      const sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(savedRange);
+    }
+    try{ document.execCommand('styleWithCSS', false, true); }catch(e){}
+    document.execCommand('foreColor', false, colorInput.value);
+    try{ document.execCommand('styleWithCSS', false, false); }catch(e){} // reset immediately — leaving this "true" was making later Bold clicks emit <span style="font-weight:..."> instead of <strong>, which the save-sanitizer silently dropped
+  });
+
+  if(clearBtn){
+    clearBtn.addEventListener('mousedown', e => e.preventDefault());
+    clearBtn.addEventListener('click', ()=>{
+      field.focus();
+      document.execCommand('removeFormat');
+    });
+  }
+
+  if(!allowBreaks){
+    field.addEventListener('keydown', (e)=>{ if(e.key === 'Enter') e.preventDefault(); });
+  }
+  field.addEventListener('paste', (e)=>{
+    e.preventDefault();
+    const text = (e.clipboardData || window.clipboardData).getData('text/plain');
+    document.execCommand('insertText', false, text);
+  });
+}
+
+function escapeHtml(str){
+  return String(str).replace(/[&<>"']/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+}
+function escapeAttr(str){
+  return String(str).replace(/['"\\]/g, '').replace(/[<>]/g,'');
+}
+function stripHtml(html){
+  const tmp = document.createElement('div');
+  tmp.innerHTML = html || '';
+  return tmp.textContent || '';
+}
+
+/* ---------------- Multi-image gallery manager (admin UI) ---------------- */
+// images: array of {id, dataUrl}, mutated in place by the thumb controls.
+function renderGalleryThumbs(containerId, images){
+  const el = document.getElementById(containerId);
+  if(!images.length){
+    el.innerHTML = '<div class="gallery-empty">ยังไม่มีรูปภาพ</div>';
+    return;
+  }
+  el.innerHTML = images.map((img,i)=>`
+    <div class="gallery-thumb">
+      <img src="${img.dataUrl}">
+      ${i===0 ? '<span class="gallery-cover-badge">ปก</span>' : ''}
+      <div class="gallery-thumb-controls">
+        <button type="button" class="gt-btn" data-move="${i}:-1" ${i===0?'disabled':''} title="ย้ายก่อนหน้า">◀</button>
+        <button type="button" class="gt-btn gt-danger" data-remove="${i}" title="ลบรูปนี้">✕</button>
+        <button type="button" class="gt-btn" data-move="${i}:1" ${i===images.length-1?'disabled':''} title="ย้ายถัดไป">▶</button>
+      </div>
+    </div>
+  `).join('');
+  el.querySelectorAll('[data-remove]').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      images.splice(Number(b.dataset.remove), 1);
+      renderGalleryThumbs(containerId, images);
+    });
+  });
+  el.querySelectorAll('[data-move]').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      const [idx, dir] = b.dataset.move.split(':').map(Number);
+      const j = idx + dir;
+      if(j < 0 || j >= images.length) return;
+      [images[idx], images[j]] = [images[j], images[idx]];
+      renderGalleryThumbs(containerId, images);
+    });
+  });
+}
+
+/* ---------------- Toast notifications ---------------- */
+function showToast(message, type='success'){
+  const container = document.getElementById('toastContainer');
+  if(!container) return;
+  const el = document.createElement('div');
+  el.className = `toast ${type}`;
+  el.textContent = (type==='success' ? '✓ ' : '⚠ ') + message;
+  container.appendChild(el);
+  requestAnimationFrame(()=> el.classList.add('show'));
+  const duration = type==='error' ? 3600 : 2400;
+  setTimeout(()=>{
+    el.classList.remove('show');
+    setTimeout(()=> el.remove(), 300);
+  }, duration);
+}
+
+/* ---------------- Admin / PIN ---------------- */
+document.getElementById('adminFab').addEventListener('click', ()=>{
+  if(isAdmin){ exitAdmin(); return; }
+  openPinModal();
+});
+document.getElementById('exitAdminBtn').addEventListener('click', exitAdmin);
+document.getElementById('changePwBtn').addEventListener('click', openChangePwModal);
+document.getElementById('editHeaderBtn').addEventListener('click', openHeaderModal);
+
+function exitAdmin(){
+  isAdmin = false;
+  try{ localStorage.removeItem('pk_admin_hash'); }catch(e){}
+  render();
+  showToast('ออกจากโหมดแก้ไขแล้ว');
+}
+
+/* ---------------- Header edit ---------------- */
+let hdrBgImages = [];     // working copy of [{id, dataUrl}] while modal is open
+let hdrBgOriginalIds = []; // ids present when modal opened, to diff on save
+
+async function openHeaderModal(){
+  const titleField = document.getElementById('hdrTitleInput');
+  const subField = document.getElementById('hdrSubInput');
+  document.getElementById('hdrFont').value = state.config.headerFont || "'Prompt', sans-serif";
+  setEditableContent(titleField, state.config.title || '');
+  setEditableContent(subField, state.config.sub || '');
+
+  const blurRange = document.getElementById('hdrBlurRange');
+  blurRange.value = state.config.headerBlur ?? 65;
+  document.getElementById('hdrBlurVal').textContent = blurRange.value;
+
+  document.getElementById('hdrBgAutoBtn').classList.toggle('active', !!state.config.headerAutoAdvance);
+  const intervalRange = document.getElementById('hdrBgIntervalRange');
+  intervalRange.value = state.config.headerInterval || 4;
+  document.getElementById('hdrBgIntervalVal').textContent = intervalRange.value + ' วิ';
+
+  document.getElementById('hdrBgStatus').textContent = '';
+  hdrBgImages = headerBgImagesCache.map(x=>({id:x.id, dataUrl:x.dataUrl}));
+  hdrBgOriginalIds = hdrBgImages.map(x=>x.id);
+  renderGalleryThumbs('hdrBgGallery', hdrBgImages);
+
+  document.getElementById('headerOverlay').classList.add('show');
+}
+document.getElementById('hdrBlurRange').addEventListener('input', ()=>{
+  document.getElementById('hdrBlurVal').textContent = document.getElementById('hdrBlurRange').value;
+});
+document.getElementById('hdrBgIntervalRange').addEventListener('input', ()=>{
+  document.getElementById('hdrBgIntervalVal').textContent = document.getElementById('hdrBgIntervalRange').value + ' วิ';
+});
+document.getElementById('hdrBgAutoBtn').addEventListener('click', ()=>{
+  document.getElementById('hdrBgAutoBtn').classList.toggle('active');
+});
+document.getElementById('hdrBgPickBtn').addEventListener('click', ()=>{
+  document.getElementById('hdrBgFile').click();
+});
+document.getElementById('hdrBgFile').addEventListener('change', async (e)=>{
+  const file = e.target.files[0];
+  e.target.value = '';
+  if(!file) return;
+  const status = document.getElementById('hdrBgStatus');
+  status.textContent = 'กำลังประมวลผลรูป...';
+  try{
+    const dataUrl = await fileToDataUrl(file);
+    hdrBgImages.push({ id: uid(), dataUrl });
+    renderGalleryThumbs('hdrBgGallery', hdrBgImages);
+    status.textContent = `เพิ่มรูปแล้ว (${hdrBgImages.length} รูป) — กด "บันทึก" เพื่อยืนยัน`;
+  }catch(err){
+    status.textContent = '⚠ ' + err.message;
+  }
+});
+
+document.getElementById('headerCancel').addEventListener('click', ()=>{
+  document.getElementById('headerOverlay').classList.remove('show');
+});
+document.getElementById('headerSave').addEventListener('click', async ()=>{
+  const titleField = document.getElementById('hdrTitleInput');
+  const subField = document.getElementById('hdrSubInput');
+  if(!titleField.textContent.trim()){ titleField.focus(); return; }
+  const status = document.getElementById('hdrBgStatus');
+
+  state.config.title = sanitizeRichHtml(titleField.innerHTML, false);
+  state.config.sub = sanitizeRichHtml(subField.innerHTML, false);
+  state.config.headerFont = document.getElementById('hdrFont').value;
+  state.config.headerBlur = Number(document.getElementById('hdrBlurRange').value);
+  state.config.headerAutoAdvance = document.getElementById('hdrBgAutoBtn').classList.contains('active');
+  state.config.headerInterval = Number(document.getElementById('hdrBgIntervalRange').value);
+
+  const finalIds = hdrBgImages.map(x=>x.id);
+  const removedIds = hdrBgOriginalIds.filter(id => !finalIds.includes(id));
+  if(hdrBgImages.length) status.textContent = 'กำลังบันทึกรูป...';
+  for(const id of removedIds){ await deleteImageValue(headerBgImgKey(id)); }
+  for(const img of hdrBgImages){
+    const ok = await saveImageValue(headerBgImgKey(img.id), img.dataUrl);
+    if(!ok){ status.textContent = '⚠ บันทึกรูปไม่สำเร็จ ลองใหม่อีกครั้ง'; showToast('บันทึกรูปไม่สำเร็จ','error'); return; }
+  }
+  state.config.headerBgImages = hdrBgImages.map(x=>({id:x.id}));
+  headerBgImagesCache = hdrBgImages.map(x=>({id:x.id, dataUrl:x.dataUrl}));
+  headerBgCurrentIndex = 0;
+
+  await saveData();
+  document.getElementById('headerOverlay').classList.remove('show');
+  render();
+  showToast('บันทึกหัวข้อร้านเรียบร้อย');
+});
+
+function openPinModal(){
+  document.getElementById('pinTitle').textContent = 'ใส่รหัสผ่านเพื่อแก้ไข';
+  document.getElementById('pinHint').textContent = 'ใส่รหัสผ่านแอดมินเพื่อเข้าสู่โหมดแก้ไขข้อมูล';
+  document.getElementById('pinHint').style.color = '';
+  document.getElementById('pinInput').value = '';
+  document.getElementById('pinOverlay').classList.add('show');
+  document.getElementById('pinInput').focus();
+}
+
+document.getElementById('pinCancel').addEventListener('click', ()=>{
+  document.getElementById('pinOverlay').classList.remove('show');
+});
+
+document.getElementById('pinConfirm').addEventListener('click', async ()=>{
+  const val = document.getElementById('pinInput').value;
+  if(!val){ return; }
+  const hash = await sha256Hex(val);
+  if(hash === state.config.pinHash){
+    isAdmin = true;
+    if(document.getElementById('pinRemember').checked){
+      try{ localStorage.setItem('pk_admin_hash', hash); }catch(e){}
+    } else {
+      try{ localStorage.removeItem('pk_admin_hash'); }catch(e){}
+    }
+    document.getElementById('pinOverlay').classList.remove('show');
+    render();
+    showToast('เข้าสู่โหมดแก้ไขสำเร็จ');
+  } else {
+    document.getElementById('pinHint').textContent = 'รหัสผ่านไม่ถูกต้อง ลองอีกครั้ง';
+    document.getElementById('pinHint').style.color = '#f2622e';
+    showToast('รหัสผ่านไม่ถูกต้อง', 'error');
+  }
+});
+document.getElementById('pinInput').addEventListener('keydown', (e)=>{
+  if(e.key === 'Enter') document.getElementById('pinConfirm').click();
+});
+
+/* ---------------- Change password ---------------- */
+function openChangePwModal(){
+  document.getElementById('oldPwInput').value = '';
+  document.getElementById('newPwInput').value = '';
+  document.getElementById('newPwInput2').value = '';
+  document.getElementById('changePwHint').textContent = 'ใส่รหัสผ่านเดิม และรหัสผ่านใหม่ที่ต้องการตั้ง';
+  document.getElementById('changePwHint').style.color = '';
+  document.getElementById('changePwOverlay').classList.add('show');
+}
+document.getElementById('changePwCancel').addEventListener('click', ()=>{
+  document.getElementById('changePwOverlay').classList.remove('show');
+});
+document.getElementById('changePwSave').addEventListener('click', async ()=>{
+  const oldPw = document.getElementById('oldPwInput').value;
+  const newPw = document.getElementById('newPwInput').value;
+  const newPw2 = document.getElementById('newPwInput2').value;
+  const hint = document.getElementById('changePwHint');
+
+  const oldHash = await sha256Hex(oldPw);
+  if(oldHash !== state.config.pinHash){
+    hint.textContent = 'รหัสผ่านเดิมไม่ถูกต้อง';
+    hint.style.color = '#f2622e';
+    showToast('รหัสผ่านเดิมไม่ถูกต้อง', 'error');
+    return;
+  }
+  if(newPw.length < 6){
+    hint.textContent = 'รหัสผ่านใหม่ควรมีอย่างน้อย 6 ตัวอักษร';
+    hint.style.color = '#f2622e';
+    showToast('รหัสผ่านใหม่สั้นเกินไป', 'error');
+    return;
+  }
+  if(newPw !== newPw2){
+    hint.textContent = 'รหัสผ่านใหม่ทั้งสองช่องไม่ตรงกัน';
+    hint.style.color = '#f2622e';
+    showToast('รหัสผ่านใหม่ไม่ตรงกัน', 'error');
+    return;
+  }
+  state.config.pinHash = await sha256Hex(newPw);
+  await saveData();
+  try{
+    if(localStorage.getItem('pk_admin_hash')){ localStorage.setItem('pk_admin_hash', state.config.pinHash); }
+  }catch(e){}
+  document.getElementById('changePwOverlay').classList.remove('show');
+  showToast('เปลี่ยนรหัสผ่านเรียบร้อยแล้ว จำรหัสใหม่ให้ดีนะครับ');
+});
+
+/* ---------------- Service modal ---------------- */
+let svcPosterImages = [];      // working copy of [{id, dataUrl}] while modal is open
+let svcPosterOriginalIds = [];  // ids present when modal opened, to diff on save
+let svcCountdownEndsAt = null;  // working countdown end timestamp (epoch ms) while modal is open
+
+function updateSvcCountdownStatus(){
+  const status = document.getElementById('svcCountdownStatus');
+  const clearBtn = document.getElementById('svcCountdownClearBtn');
+  if(svcCountdownEndsAt){
+    const remain = svcCountdownEndsAt - Date.now();
+    status.textContent = remain > 0 ? `เหลือเวลา: ${formatCountdown(remain)}` : 'หมดเวลาแล้ว';
+    clearBtn.style.display = 'inline-block';
+  } else {
+    status.textContent = 'ยังไม่ได้ตั้งเวลานับถอยหลัง';
+    clearBtn.style.display = 'none';
+  }
+}
+document.getElementById('svcCountdownSetBtn').addEventListener('click', ()=>{
+  const days = parseFloat(document.getElementById('svcCountdownDays').value);
+  if(!days || days <= 0){
+    document.getElementById('svcCountdownStatus').textContent = '⚠ กรุณาใส่จำนวนวันที่มากกว่า 0';
+    return;
+  }
+  svcCountdownEndsAt = Date.now() + days * 24 * 60 * 60 * 1000;
+  updateSvcCountdownStatus();
+});
+document.getElementById('svcCountdownClearBtn').addEventListener('click', ()=>{
+  svcCountdownEndsAt = null;
+  document.getElementById('svcCountdownDays').value = '';
+  updateSvcCountdownStatus();
+});
+
+async function openSvcModal(svcId, presetCatId){
+  editingSvcId = svcId || uid();
+  isNewSvcEntry = !svcId;
+  const svc = svcId ? state.services.find(s=>s.id===svcId) : null;
+  document.getElementById('svcModalTitle').textContent = svc ? 'แก้ไขบริการ' : 'เพิ่มบริการ';
+  document.getElementById('svcCategory').value = svc ? svc.catId : (presetCatId || state.categories[0]?.id || '');
+  const nameField = document.getElementById('svcName');
+  const descField = document.getElementById('svcDesc');
+  setEditableContent(nameField, svc ? svc.name : '');
+  setEditableContent(descField, svc ? svc.desc : '');
+  document.getElementById('svcPrice').value = svc ? svc.price : '';
+  document.getElementById('svcUnit').value = svc ? svc.unit : '';
+  document.getElementById('svcFont').value = svc ? (svc.font||'') : "'Prompt', sans-serif";
+  document.getElementById('svcPriceBoldBtn').classList.toggle('active', svc ? !!svc.priceBold : false);
+  document.getElementById('svcPriceColor').value = svc && svc.priceColor ? svc.priceColor : '#f2cf8e';
+  priceColorCleared = false;
+  updateSvcPricePreview();
+
+  svcCountdownEndsAt = svc && svc.countdownEndsAt ? svc.countdownEndsAt : null;
+  document.getElementById('svcCountdownDays').value = '';
+  updateSvcCountdownStatus();
+
+  document.getElementById('svcPosterAutoBtn').classList.toggle('active', svc ? !!svc.posterAutoAdvance : false);
+  const intervalRange = document.getElementById('svcPosterIntervalRange');
+  intervalRange.value = svc && svc.posterInterval ? svc.posterInterval : 4;
+  document.getElementById('svcPosterIntervalVal').textContent = intervalRange.value + ' วิ';
+
+  const status = document.getElementById('svcPosterStatus');
+  status.textContent = '';
+  svcPosterImages = [];
+  if(svc && svc.posterImages && svc.posterImages.length){
+    status.textContent = 'กำลังโหลดรูปเดิม...';
+    for(const imgMeta of svc.posterImages){
+      const dataUrl = await loadImageValue(posterKey(svc.id, imgMeta.id));
+      if(dataUrl) svcPosterImages.push({ id: imgMeta.id, dataUrl });
+    }
+    status.textContent = '';
+  }
+  svcPosterOriginalIds = svcPosterImages.map(x=>x.id);
+  renderGalleryThumbs('svcPosterGallery', svcPosterImages);
+
+  document.getElementById('svcOverlay').classList.add('show');
+}
+document.getElementById('svcCancel').addEventListener('click', ()=>{
+  document.getElementById('svcOverlay').classList.remove('show');
+});
+document.getElementById('svcPosterPickBtn').addEventListener('click', ()=>{
+  document.getElementById('svcPosterFile').click();
+});
+document.getElementById('svcPosterFile').addEventListener('change', async (e)=>{
+  const file = e.target.files[0];
+  e.target.value = '';
+  if(!file) return;
+  const status = document.getElementById('svcPosterStatus');
+  status.textContent = 'กำลังประมวลผลรูป...';
+  try{
+    const dataUrl = await fileToDataUrl(file);
+    svcPosterImages.push({ id: uid(), dataUrl });
+    renderGalleryThumbs('svcPosterGallery', svcPosterImages);
+    status.textContent = `เพิ่มรูปแล้ว (${svcPosterImages.length} รูป) — กด "บันทึก" เพื่อยืนยัน`;
+  }catch(err){
+    status.textContent = '⚠ ' + err.message;
+  }
+});
+document.getElementById('svcPosterIntervalRange').addEventListener('input', ()=>{
+  document.getElementById('svcPosterIntervalVal').textContent = document.getElementById('svcPosterIntervalRange').value + ' วิ';
+});
+document.getElementById('svcPosterAutoBtn').addEventListener('click', ()=>{
+  document.getElementById('svcPosterAutoBtn').classList.toggle('active');
+});
+document.getElementById('svcPriceBoldBtn').addEventListener('click', ()=>{
+  document.getElementById('svcPriceBoldBtn').classList.toggle('active');
+  updateSvcPricePreview();
+});
+let priceColorCleared = false;
+document.getElementById('svcPriceColor').addEventListener('input', ()=>{
+  priceColorCleared = false;
+  updateSvcPricePreview();
+});
+document.getElementById('clearPriceColor').addEventListener('click', ()=>{
+  priceColorCleared = true;
+  document.getElementById('svcPriceColor').value = '#f2cf8e';
+  document.getElementById('svcPriceBoldBtn').classList.remove('active');
+  updateSvcPricePreview();
+});
+
+document.getElementById('svcSave').addEventListener('click', async ()=>{
+  const nameField = document.getElementById('svcName');
+  const descField = document.getElementById('svcDesc');
+  if(!nameField.textContent.trim()){ nameField.focus(); return; }
+  const name = sanitizeRichHtml(nameField.innerHTML, false);
+  const catId = document.getElementById('svcCategory').value;
+  const desc = sanitizeRichHtml(descField.innerHTML, true);
+  const price = document.getElementById('svcPrice').value.trim();
+  const unit = document.getElementById('svcUnit').value.trim();
+  const font = document.getElementById('svcFont').value;
+  const priceBold = document.getElementById('svcPriceBoldBtn').classList.contains('active');
+  const priceColor = priceColorCleared ? '' : document.getElementById('svcPriceColor').value;
+  priceColorCleared = false;
+  const posterAutoAdvance = document.getElementById('svcPosterAutoBtn').classList.contains('active');
+  const posterInterval = Number(document.getElementById('svcPosterIntervalRange').value);
+
+  const status = document.getElementById('svcPosterStatus');
+  const finalIds = svcPosterImages.map(x=>x.id);
+  const removedIds = svcPosterOriginalIds.filter(id => !finalIds.includes(id));
+  if(svcPosterImages.length) status.textContent = 'กำลังบันทึกรูป...';
+  for(const id of removedIds){ await deleteImageValue(posterKey(editingSvcId, id)); }
+  for(const img of svcPosterImages){
+    const ok = await saveImageValue(posterKey(editingSvcId, img.id), img.dataUrl);
+    if(!ok){
+      status.textContent = '⚠ บันทึกรูปไม่สำเร็จ ลองใหม่อีกครั้ง';
+      showToast('บันทึกรูปโปสเตอร์ไม่สำเร็จ', 'error');
+      return;
+    }
+  }
+  const posterImages = svcPosterImages.map(x=>({id:x.id}));
+
+  const payload = { name, catId, desc, price, unit, posterImages, posterAutoAdvance, posterInterval, font, priceBold, priceColor, countdownEndsAt: svcCountdownEndsAt };
+  const wasNew = isNewSvcEntry;
+
+  if(!isNewSvcEntry){
+    const svc = state.services.find(s=>s.id===editingSvcId);
+    Object.assign(svc, payload);
+  } else {
+    state.services.push({ id:editingSvcId, ...payload });
+  }
+  await saveData();
+  document.getElementById('svcOverlay').classList.remove('show');
+  render();
+  showToast(wasNew ? 'เพิ่มบริการเรียบร้อย' : 'บันทึกการแก้ไขเรียบร้อย');
+});
+
+async function deleteService(id){
+  const svc = state.services.find(s=>s.id===id);
+  if(svc && svc.posterImages){
+    for(const img of svc.posterImages){ await deleteImageValue(posterKey(id, img.id)); }
+  }
+  state.services = state.services.filter(s=>s.id!==id);
+  await saveData();
+  render();
+  showToast('ลบบริการเรียบร้อย');
+}
+
+/* ---------------- Category modal ---------------- */
+let editingCatId = null;
+
+document.getElementById('addCatBtn').addEventListener('click', ()=>{
+  editingCatId = null;
+  document.getElementById('catModalTitle').textContent = 'เพิ่มหมวดหมู่ใหม่';
+  setEditableContent(document.getElementById('catName'), '');
+  document.getElementById('catColor').value='geo';
+  document.getElementById('catOverlay').classList.add('show');
+});
+function openCatModal(catId){
+  const cat = state.categories.find(c=>c.id===catId);
+  if(!cat) return;
+  editingCatId = catId;
+  document.getElementById('catModalTitle').textContent = 'แก้ไขหมวดหมู่';
+  setEditableContent(document.getElementById('catName'), cat.name);
+  document.getElementById('catColor').value = cat.color;
+  document.getElementById('catOverlay').classList.add('show');
+}
+document.getElementById('catCancel').addEventListener('click', ()=>{
+  document.getElementById('catOverlay').classList.remove('show');
+});
+document.getElementById('catSave').addEventListener('click', async ()=>{
+  const nameField = document.getElementById('catName');
+  if(!nameField.textContent.trim()){ nameField.focus(); return; }
+  const name = sanitizeRichHtml(nameField.innerHTML, false);
+  const color = document.getElementById('catColor').value;
+  if(editingCatId){
+    const cat = state.categories.find(c=>c.id===editingCatId);
+    if(cat){ cat.name = name; cat.color = color; }
+  } else {
+    state.categories.push({ id:uid(), name, color });
+  }
+  await saveData();
+  document.getElementById('catOverlay').classList.remove('show');
+  render();
+  showToast(editingCatId ? 'บันทึกหมวดหมู่เรียบร้อย' : 'เพิ่มหมวดหมู่เรียบร้อย');
+});
+
+async function deleteCategory(id){
+  const hasSvcs = state.services.some(s=>s.catId===id);
+  if(hasSvcs){
+    showToast('ลบไม่ได้: หมวดนี้ยังมีบริการอยู่ กรุณาลบหรือย้ายบริการออกก่อน', 'error');
+    return;
+  }
+  state.categories = state.categories.filter(c=>c.id!==id);
+  if(activeCat===id) activeCat='all';
+  await saveData();
+  render();
+  showToast('ลบหมวดหมู่เรียบร้อย');
+}
+
+/* ---------------- Init ---------------- */
+setupRichEditor('hdrTitleInput', 'hdrTitleToolbar', false);
+setupRichEditor('hdrSubInput', 'hdrSubToolbar', false);
+setupRichEditor('svcName', 'svcNameToolbar', false);
+setupRichEditor('svcDesc', 'svcDescToolbar', true);
+setupRichEditor('catName', 'catNameToolbar', false);
+loadData();
+</script>
+</body>
+</html>
