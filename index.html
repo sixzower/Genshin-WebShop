@@ -745,8 +745,14 @@
     <div class="field">
       <label>ตัวจับเวลานับถอยหลัง (สำหรับโปรโมชั่นแบบจำกัดเวลา ไม่บังคับ)</label>
       <div class="range-row" style="gap:8px;">
-        <input type="number" id="svcCountdownDays" min="0" step="0.5" placeholder="ใส่จำนวนวัน เช่น 3" style="flex:1;background:var(--ink-2);border:1px solid var(--border-soft);color:var(--text);border-radius:8px;padding:9px 11px;font-size:14px;font-family:'Prompt', sans-serif;">
-        <button type="button" class="rt-btn" id="svcCountdownSetBtn">⏱ ตั้งเวลาใหม่</button>
+        <input type="number" id="svcCountdownHours" min="0" placeholder="ชม." style="flex:1;background:var(--ink-2);border:1px solid var(--border-soft);color:var(--text);border-radius:8px;padding:9px 11px;font-size:14px;font-family:'Prompt', sans-serif;">
+        <input type="number" id="svcCountdownMinutes" min="0" max="59" placeholder="นาที" style="flex:1;background:var(--ink-2);border:1px solid var(--border-soft);color:var(--text);border-radius:8px;padding:9px 11px;font-size:14px;font-family:'Prompt', sans-serif;">
+        <input type="number" id="svcCountdownSeconds" min="0" max="59" placeholder="วินาที" style="flex:1;background:var(--ink-2);border:1px solid var(--border-soft);color:var(--text);border-radius:8px;padding:9px 11px;font-size:14px;font-family:'Prompt', sans-serif;">
+      </div>
+      <p class="rt-hint" style="margin-top:6px;">เช่น ใส่ ชม.=24 นาที=05 วินาที=00 เพื่อนับถอยหลัง 24 ชั่วโมง 5 นาที จากตอนนี้</p>
+      <div class="range-row" style="gap:8px;">
+        <button type="button" class="rt-btn" id="svcCountdownSetBtn" style="flex:1;">⏱ ตั้งเวลา</button>
+        <button type="button" class="rt-btn" id="svcCountdownAutoDeleteBtn" style="flex:1;">🗑 ลบอัตโนมัติ</button>
       </div>
       <div class="img-upload-status" id="svcCountdownStatus">ยังไม่ได้ตั้งเวลานับถอยหลัง</div>
       <button type="button" class="rt-btn" id="svcCountdownClearBtn" style="margin-top:8px;display:none;">✕ ยกเลิกตัวจับเวลา</button>
@@ -1131,8 +1137,33 @@ function tickCountdowns(){
     const remain = end - Date.now();
     el.textContent = remain > 0 ? `⏱ ${formatCountdown(remain)}` : '⏱ หมดโปรฯแล้ว';
   });
+  checkAutoDeleteExpired();
 }
 setInterval(tickCountdowns, 1000);
+
+const autoDeleteAttempted = new Set(); // avoid repeat delete-attempts for the same service within this page session
+async function checkAutoDeleteExpired(){
+  if(!state || !state.services) return;
+  const now = Date.now();
+  const expired = state.services.filter(s =>
+    s.countdownEndsAt && s.countdownAutoDelete && s.countdownEndsAt <= now && !autoDeleteAttempted.has(s.id)
+  );
+  for(const s of expired){
+    autoDeleteAttempted.add(s.id);
+    await autoDeleteService(s.id);
+  }
+}
+async function autoDeleteService(id){
+  const svc = state.services.find(s=>s.id===id);
+  if(!svc) return;
+  if(svc.posterImages){
+    for(const img of svc.posterImages){ await deleteImageValue(posterKey(id, img.id)); }
+  }
+  state.services = state.services.filter(s=>s.id!==id);
+  await saveData();
+  render();
+  if(isAdmin) showToast(`ลบ "${stripHtml(svc.name)}" อัตโนมัติเนื่องจากหมดเวลาโปรโมชั่น`);
+}
 
 /* ---------------- Render ---------------- */
 function render(){
@@ -1891,17 +1922,26 @@ function updateSvcCountdownStatus(){
   }
 }
 document.getElementById('svcCountdownSetBtn').addEventListener('click', ()=>{
-  const days = parseFloat(document.getElementById('svcCountdownDays').value);
-  if(!days || days <= 0){
-    document.getElementById('svcCountdownStatus').textContent = '⚠ กรุณาใส่จำนวนวันที่มากกว่า 0';
+  const h = parseFloat(document.getElementById('svcCountdownHours').value) || 0;
+  const m = parseFloat(document.getElementById('svcCountdownMinutes').value) || 0;
+  const s = parseFloat(document.getElementById('svcCountdownSeconds').value) || 0;
+  const totalMs = (h * 3600 + m * 60 + s) * 1000;
+  if(totalMs <= 0){
+    document.getElementById('svcCountdownStatus').textContent = '⚠ กรุณาใส่เวลาที่มากกว่า 0';
     return;
   }
-  svcCountdownEndsAt = Date.now() + days * 24 * 60 * 60 * 1000;
+  svcCountdownEndsAt = Date.now() + totalMs;
   updateSvcCountdownStatus();
+});
+document.getElementById('svcCountdownAutoDeleteBtn').addEventListener('click', ()=>{
+  document.getElementById('svcCountdownAutoDeleteBtn').classList.toggle('active');
 });
 document.getElementById('svcCountdownClearBtn').addEventListener('click', ()=>{
   svcCountdownEndsAt = null;
-  document.getElementById('svcCountdownDays').value = '';
+  document.getElementById('svcCountdownHours').value = '';
+  document.getElementById('svcCountdownMinutes').value = '';
+  document.getElementById('svcCountdownSeconds').value = '';
+  document.getElementById('svcCountdownAutoDeleteBtn').classList.remove('active');
   updateSvcCountdownStatus();
 });
 
@@ -1924,7 +1964,10 @@ async function openSvcModal(svcId, presetCatId){
   updateSvcPricePreview();
 
   svcCountdownEndsAt = svc && svc.countdownEndsAt ? svc.countdownEndsAt : null;
-  document.getElementById('svcCountdownDays').value = '';
+  document.getElementById('svcCountdownHours').value = '';
+  document.getElementById('svcCountdownMinutes').value = '';
+  document.getElementById('svcCountdownSeconds').value = '';
+  document.getElementById('svcCountdownAutoDeleteBtn').classList.toggle('active', svc ? !!svc.countdownAutoDelete : false);
   updateSvcCountdownStatus();
 
   document.getElementById('svcPosterAutoBtn').classList.toggle('active', svc ? !!svc.posterAutoAdvance : false);
@@ -2022,7 +2065,8 @@ document.getElementById('svcSave').addEventListener('click', async ()=>{
   }
   const posterImages = svcPosterImages.map(x=>({id:x.id}));
 
-  const payload = { name, catId, desc, price, unit, posterImages, posterAutoAdvance, posterInterval, font, priceBold, priceColor, countdownEndsAt: svcCountdownEndsAt };
+  const countdownAutoDelete = document.getElementById('svcCountdownAutoDeleteBtn').classList.contains('active');
+  const payload = { name, catId, desc, price, unit, posterImages, posterAutoAdvance, posterInterval, font, priceBold, priceColor, countdownEndsAt: svcCountdownEndsAt, countdownAutoDelete };
   const wasNew = isNewSvcEntry;
 
   if(!isNewSvcEntry){
