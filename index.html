@@ -4,10 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pakanang Shop</title>
+<meta name="description" content="ร้านรับบริการ Genshin Impact — รับเคลียร์เควส ปั้นตัวละคร ปั้นอาวุธ เล่นเนื้อเรื่อง ดูแลไอดี">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pakanang Shop">
+<meta property="og:title" content="Pakanang Shop — ร้านรับบริการ Genshin Impact">
+<meta property="og:description" content="รับเคลียร์เควส · ปั้นตัวละคร · ปั้นอาวุธ · เล่นเนื้อเรื่อง · ดูแลไอดี">
+<meta property="og:locale" content="th_TH">
+<meta name="twitter:card" content="summary_large_image">
+<!-- เมื่อนำเว็บขึ้นออนไลน์แล้ว ให้ใส่ 2 บรรทัดนี้ (ต้องเป็นลิงก์เต็ม https://... เท่านั้น) เพื่อให้ Facebook แสดงรูปพรีวิว:
+<meta property="og:url" content="https://ลิงก์เว็บของคุณ/">
+<meta property="og:image" content="https://ลิงก์รูปพรีวิวของคุณ/preview.jpg">
+-->
 <link rel="icon" type="image/png" href="data:image/png;base64,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">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@500;600;700&family=Noto+Sans+Thai:wght@400;500;600;700&family=Kanit:wght@400;600;700&family=Mitr:wght@400;600;700&family=Prompt:wght@400;600;700&family=Chonburi&family=Pattaya&family=Itim&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
     --ink:#0a0e18;
@@ -100,12 +111,13 @@
     background:linear-gradient(90deg, transparent, var(--gold), transparent);
     opacity:0.6;
   }
-  #editHeaderBtn{
+  #editHeaderBtn, #editAnnounceBtn{
     margin-top:16px;font-size:12px;color:var(--gold-bright);
     background:transparent;border:1px solid var(--border);border-radius:999px;
     padding:5px 14px;cursor:pointer;font-family:'Prompt', sans-serif;
   }
-  #editHeaderBtn:hover{background:rgba(212,175,106,0.08);}
+  #editHeaderBtn:hover, #editAnnounceBtn:hover{background:rgba(212,175,106,0.08);}
+  #editAnnounceBtn{margin-left:6px;}
 
   /* ---------- Rich text toolbar ---------- */
   .rt-toolbar{display:flex;align-items:center;gap:8px;margin-bottom:6px;}
@@ -284,9 +296,11 @@
     box-shadow:0 0 8px var(--el,var(--gold));}
 
   /* ---------- Section ---------- */
-  section.cat-block{margin-top:38px;}
+  section.cat-block{margin-top:38px;scroll-margin-top:60px;}
+  .cat-block.flash-cat .cat-head{animation:cardFlash 2.4s ease;border-radius:10px;}
+  @media (prefers-reduced-motion:reduce){ .cat-block.flash-cat .cat-head{animation:none;outline:2px solid rgba(212,175,106,0.6);} }
   .cat-head{
-    display:flex;align-items:center;justify-content:space-between;
+    display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px 12px;
     margin-bottom:14px;
   }
   .cat-title{
@@ -295,7 +309,8 @@
   }
   .cat-title .dot{width:10px;height:10px;}
   .cat-count{color:var(--text-faint);font-size:13px;font-weight:400;font-family:'Prompt', sans-serif;}
-  .cat-admin-tools{display:flex;align-items:center;gap:6px;}
+  .cat-admin-tools{display:flex;align-items:center;flex-wrap:wrap;justify-content:flex-end;gap:6px;}
+  .cat-admin-tools button{white-space:nowrap;}
   .reorder-btn{
     width:26px;height:26px;border-radius:6px;border:1px solid var(--border-soft);
     background:transparent;color:var(--text-muted);cursor:pointer;font-size:13px;
@@ -320,6 +335,8 @@
     border-left:3px solid var(--el, var(--gold));
     overflow:hidden;
     isolation:isolate;
+    display:flex;
+    flex-direction:column;
   }
   .card.has-poster{cursor:pointer;}
   .card[draggable="true"]{cursor:grab;}
@@ -333,7 +350,9 @@
     font-size:13px;cursor:grab;user-select:none;
   }
   .card.dragging .drag-handle{cursor:grabbing;}
-  .card-content{position:relative;z-index:1;padding:18px 18px 16px;}
+  .card-content{position:relative;z-index:1;padding:18px 18px 16px;flex:1;display:flex;flex-direction:column;}
+  .card-cover{flex-shrink:0;}
+  .card-content > .status-badge, .card-content > .countdown-badge{align-self:flex-start;}
   .card:hover{border-color:var(--border);background:var(--panel-2);transform:translateY(-2px);}
   .card-cover{
     position:relative;width:100%;aspect-ratio:1/1;background:var(--panel-2);overflow:hidden;
@@ -347,9 +366,14 @@
   }
   @keyframes cover-shimmer{ 0%{background-position:200% 0;} 100%{background-position:-200% 0;} }
   .cover-badge{
-    position:absolute;right:8px;bottom:8px;font-size:10.5px;color:var(--text);
-    background:rgba(10,14,24,0.65);padding:3px 8px;border-radius:999px;
+    position:absolute;right:8px;bottom:8px;display:inline-flex;align-items:center;gap:5px;
+    font-size:10.5px;line-height:1;color:rgba(255,255,255,0.88);
+    background:rgba(10,14,24,0.55);padding:5px 9px;border-radius:999px;
+    -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
   }
+  .cover-badge.icon-only{padding:6px;}
+  .cover-badge.icon-only svg{width:13px;height:13px;}
+  .cover-badge svg{width:12px;height:12px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;}
   .card-head-row{
     display:flex;align-items:flex-start;justify-content:space-between;gap:12px;
     margin-bottom:6px;
@@ -369,11 +393,75 @@
   .price-tag .num{
     font-size:17px;font-weight:700;color:var(--gold-bright);
   }
+  .price-tag .old-price{display:block;font-size:12px;color:var(--text-faint);text-decoration:line-through;margin-bottom:1px;}
   .price-tag .unit{
     display:block;font-size:11px;color:var(--text-faint);margin-top:1px;
   }
 
-  .card-foot{display:flex;gap:8px;margin-top:6px;}
+  .status-badge{
+    display:inline-flex;align-items:center;gap:4px;
+    font-size:11.5px;font-weight:600;padding:3px 9px;border-radius:999px;margin-bottom:10px;
+    background:rgba(255,255,255,0.06);color:var(--text-muted);border:1px solid var(--border);
+  }
+  .status-badge.full{background:rgba(242,98,46,0.14);color:#f2622e;border-color:rgba(242,98,46,0.4);}
+  .card.is-unavailable h4, .card.is-unavailable p.desc, .card.is-unavailable .price-tag{opacity:0.6;}
+  .card.is-unavailable .card-cover img{opacity:0.55;}
+  /* ---------- Announcement bar ---------- */
+  .announce{
+    display:flex;align-items:center;gap:10px;
+    width:100%;margin:10px 0 0;padding:10px 16px;border-radius:12px;
+    border:1px solid rgba(212,175,106,0.35);background:rgba(212,175,106,0.07);
+    color:var(--gold-bright);font-size:13.5px;line-height:1.55;
+  }
+  .announce-item svg{width:16px;height:16px;flex-shrink:0;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;}
+  .announce-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
+  .announce-viewport{
+    flex:1;min-width:0;overflow:hidden;
+    -webkit-mask-image:linear-gradient(90deg, transparent 0, #000 22px, #000 calc(100% - 22px), transparent 100%);
+    mask-image:linear-gradient(90deg, transparent 0, #000 22px, #000 calc(100% - 22px), transparent 100%);
+  }
+  .announce-track{
+    display:flex;width:max-content;
+    animation:announceScroll var(--ann-dur, 40s) linear infinite;
+    will-change:transform;
+  }
+  .announce-track:hover{animation-play-state:paused;}
+  .announce-item{display:inline-flex;align-items:center;gap:9px;flex-shrink:0;white-space:nowrap;}
+  @keyframes announceScroll{
+    from{transform:translateX(var(--ann-start, 100%));}
+    to{transform:translateX(calc(-1 * var(--ann-w, 100%)));}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .announce-track{animation:none;width:auto;transform:none;}
+    .announce-viewport{-webkit-mask-image:none;mask-image:none;}
+    .announce-item{white-space:normal;align-items:flex-start;}
+    .announce-item svg{margin-top:3px;}
+  }
+  /* ---------- Highlight when opened from a shared link ---------- */
+  .card.flash{animation:cardFlash 2.4s ease;}
+  @keyframes cardFlash{0%,100%{box-shadow:0 0 0 0 rgba(212,175,106,0);}20%,60%{box-shadow:0 0 0 3px rgba(212,175,106,0.55);}}
+  @media (prefers-reduced-motion:reduce){ .card.flash{animation:none;outline:2px solid rgba(212,175,106,0.6);} }
+  .status-badge.popular{background:rgba(212,175,106,0.14);color:var(--gold-bright);border-color:rgba(212,175,106,0.45);}
+  .status-badge.recommended{background:rgba(63,169,220,0.14);color:#7cc8ec;border-color:rgba(63,169,220,0.45);}
+  .interest-btn{
+    margin-top:auto;align-self:flex-start;
+    display:inline-flex;align-items:center;gap:7px;background:none;border:none;padding:4px 0;
+    color:var(--gold-bright);font-size:12.5px;cursor:pointer;font-family:'Prompt', sans-serif;
+    opacity:0.8;transition:opacity .2s ease;
+  }
+  .interest-btn svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;}
+  .interest-label{
+    padding-bottom:2px;
+    background:linear-gradient(currentColor,currentColor) no-repeat 0 100% / 0 1px;
+    transition:background-size .28s ease;
+  }
+  .interest-btn:hover, .interest-btn:focus-visible{opacity:1;}
+  .interest-btn:hover .interest-label, .interest-btn:focus-visible .interest-label{background-size:100% 1px;}
+  .interest-btn:active{opacity:0.6;}
+  @media (pointer:coarse){ .interest-btn{padding:12px 0;} } /* bigger tap area on touch screens */
+  .interest-btn:focus-visible{outline:1px solid var(--gold);outline-offset:3px;border-radius:4px;}
+  @media (prefers-reduced-motion:reduce){ .interest-label{transition:none;} }
+  .card-foot{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px;}
   .edit-btn,.del-btn{
     font-size:12px;border:1px solid var(--border-soft);background:transparent;color:var(--text-muted);
     padding:5px 10px;border-radius:7px;cursor:pointer;font-family:'Prompt', sans-serif;
@@ -432,9 +520,18 @@
     text-align:center;
     display:none;
   }
-  .admin-banner.show{display:block;}
+  .admin-banner.show{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:6px 8px;}
+  .admin-banner-text{margin-right:4px;}
+  .backup-age{margin-left:0;font-size:12px;opacity:0.8;}
+  .backup-age.warn{color:#f2622e;opacity:1;font-weight:600;}
+  @media (max-width:700px){
+    .admin-banner{position:relative;} /* on phones the banner scrolls away instead of covering the page */
+    .admin-banner-text{flex-basis:100%;margin:0;}
+    .backup-age{order:1;flex-basis:100%;}
+    .admin-banner button{order:2;}
+  }
   .admin-banner button{
-    margin-left:12px;background:transparent;border:1px solid var(--border);color:var(--gold-bright);
+    margin-left:0;background:transparent;border:1px solid var(--border);color:var(--gold-bright);
     border-radius:6px;padding:3px 10px;font-size:12px;cursor:pointer;font-family:'Prompt', sans-serif;
   }
 
@@ -475,6 +572,20 @@
     color:#1a1305;border:none;font-weight:600;
   }
   .btn-primary:hover{filter:brightness(1.08);color:#1a1305;}
+  /* ---------- Confirm popup ---------- */
+  .confirm-overlay{z-index:120;}
+  .confirm-modal{max-width:380px;animation:confirmIn .16s ease-out;}
+  @keyframes confirmIn{from{opacity:0;transform:translateY(8px) scale(.98);}to{opacity:1;transform:none;}}
+  @media (prefers-reduced-motion:reduce){ .confirm-modal{animation:none;} }
+  .confirm-modal h3{margin:0 0 12px;}
+  .confirm-name{
+    margin:0 0 8px;padding:8px 11px;border-radius:8px;background:var(--ink-2);
+    border:1px solid var(--border-soft);color:var(--text);font-size:14px;font-weight:600;word-break:break-word;
+  }
+  .confirm-msg{margin:0;font-size:13px;line-height:1.65;color:var(--text-muted);white-space:pre-line;}
+  .confirm-msg:empty{display:none;}
+  .btn-danger-fill{background:#dc3545;color:#fff;border:none;font-weight:600;}
+  .btn-danger-fill:hover{filter:brightness(1.1);color:#fff;}
   .btn-danger{border-color:rgba(242,98,46,0.4);color:#f2622e;}
   .btn-danger:hover{border-color:#f2622e;}
 
@@ -530,10 +641,26 @@
 
 <div class="boot-loader" id="bootLoader"><div class="boot-spinner"></div></div>
 
+<!-- Confirm popup -->
+<div class="overlay confirm-overlay" id="confirmOverlay" role="dialog" aria-modal="true" aria-labelledby="confirmTitle">
+  <div class="modal confirm-modal">
+    <h3 id="confirmTitle"></h3>
+    <div class="confirm-name" id="confirmName" style="display:none;"></div>
+    <p class="confirm-msg" id="confirmMsg"></p>
+    <div class="modal-actions">
+      <button type="button" class="btn" id="confirmCancel">ยกเลิก</button>
+      <button type="button" class="btn btn-primary" id="confirmOk">ยืนยัน</button>
+    </div>
+  </div>
+</div>
+
 <div class="toast-container" id="toastContainer"></div>
 
 <div class="admin-banner" id="adminBanner">
-  โหมดแก้ไขเปิดอยู่ — คุณสามารถเพิ่ม แก้ไข หรือลบข้อมูลได้
+  <span class="admin-banner-text">โหมดแก้ไขเปิดอยู่ — คุณสามารถเพิ่ม แก้ไข หรือลบข้อมูลได้</span>
+  <button id="backupBtn">สำรองข้อมูล</button><span class="backup-age" id="backupAge"></span>
+  <button id="restoreBtn">กู้คืนข้อมูล</button>
+  <input type="file" id="restoreFile" accept="application/json,.json" style="display:none">
   <button id="changePwBtn">เปลี่ยนรหัสผ่าน</button>
   <button id="exitAdminBtn">ออกจากโหมดแก้ไข</button>
 </div>
@@ -541,7 +668,7 @@
 <div class="wrap">
   <header id="siteHeader">
     <div class="header-bg" id="headerBg" style="display:none;"></div>
-    <div class="emblem">
+    <div class="emblem" aria-hidden="true">
       <svg viewBox="0 0 64 64" fill="none">
         <g class="ring">
           <circle cx="32" cy="8" r="3.4" fill="#f2622e"/>
@@ -558,8 +685,14 @@
     <h1 id="siteTitle" style="font-family:'Prompt', sans-serif;">ร้านรับบริการ Genshin Impact</h1>
     <p class="sub" id="siteSub">รับเคลียร์เควส · ปั้นตัวละคร · ปั้นอาวุธ · เล่นเนื้อเรื่อง · ดูแลไอดี</p>
     <button id="editHeaderBtn" style="display:none;">✎ แก้ไขหัวข้อร้าน</button>
+    <button id="editAnnounceBtn" style="display:none;">✎ ประกาศ</button>
     <div class="hairline"></div>
   </header>
+
+  <div class="announce" id="announceBar" role="status" style="display:none;">
+    <span class="announce-sr" id="announceText"></span>
+    <div class="announce-viewport" aria-hidden="true"><div class="announce-track" id="announceTrack"></div></div>
+  </div>
 
   <nav class="cats" id="catNav"></nav>
 
@@ -572,6 +705,7 @@
   <footer id="footerNote">
     ราคาและรายละเอียดอาจมีการเปลี่ยนแปลงตามอัปเดตหรือกิจกรรมในเกม<br>
     <a href="https://www.facebook.com/di.ar.753672" target="_blank" rel="noopener" style="color:var(--gold-bright);text-decoration:none;border-bottom:1px dotted var(--gold);">ติดต่อสอบถามรายละเอียด</a>
+    <div id="lastUpdated" style="margin-top:10px;opacity:0.7;display:none;"></div>
     <div style="margin-top:10px;opacity:0.7;">Copyright © 2026 Pakanang. All rights reserved.</div>
   </footer>
 </div>
@@ -586,7 +720,7 @@
   </svg>
 </div>
 
-<!-- PIN modal -->
+<!-- Login modal (Firebase Authentication) -->
 <div class="overlay" id="pinOverlay">
   <div class="modal">
     <h3 id="pinTitle">ใส่รหัสผ่านเพื่อแก้ไข</h3>
@@ -603,6 +737,31 @@
     <div class="modal-actions">
       <button class="btn" id="pinCancel">ยกเลิก</button>
       <button class="btn btn-primary" id="pinConfirm">เข้าสู่ระบบ</button>
+    </div>
+  </div>
+</div>
+
+<!-- Announcement modal -->
+<div class="overlay" id="announceOverlay">
+  <div class="modal">
+    <h3>ประกาศหน้าร้าน</h3>
+    <p class="hint">ข้อความสั้น ๆ แสดงใต้หัวเว็บ เช่น วันหยุด โปรโมชั่น หรือสถานะคิวงาน</p>
+    <div class="field">
+      <label>ข้อความประกาศ</label>
+      <textarea id="announceInput" rows="3" maxlength="300" placeholder="เช่น หยุดรับงาน 5-10 ต.ค. กลับมารับงานตามปกติวันที่ 11"></textarea>
+    </div>
+    <div class="field">
+      <label>แสดงถึงวันที่ (ไม่บังคับ — ประกาศจะหายเองหลังวันนั้น)</label>
+      <input type="date" id="announceUntil">
+      <p class="rt-hint" id="announceExpiredNote" style="display:none;margin:6px 0 0;color:#f2622e;">ประกาศนี้หมดอายุแล้ว (ซ่อนจากลูกค้าอยู่)</p>
+    </div>
+    <label style="display:flex;align-items:center;gap:7px;font-size:13px;color:var(--text-muted);cursor:pointer;">
+      <input type="checkbox" id="announceShow" checked style="width:15px;height:15px;accent-color:var(--gold);">
+      แสดงประกาศบนหน้าเว็บ
+    </label>
+    <div class="modal-actions">
+      <button class="btn" id="announceCancel">ยกเลิก</button>
+      <button class="btn btn-primary" id="announceSave">บันทึก</button>
     </div>
   </div>
 </div>
@@ -670,6 +829,12 @@
       </div>
       <div class="rt-editable" id="hdrSubInput" contenteditable="true" data-placeholder="คำโปรยสั้นๆ"></div>
     </div>
+    <div class="field">
+      <label>ข้อความที่คัดลอกเมื่อลูกค้ากด "สนใจบริการนี้"</label>
+      <textarea id="hdrInterestTpl" rows="2" maxlength="200" placeholder="สนใจบริการ: {ชื่อ} ({ราคา})"></textarea>
+      <p class="rt-hint" style="margin:6px 0 0;">ใส่ได้ {ชื่อ} {ราคา} {หมวด} — เว้นว่างไว้เพื่อใช้ข้อความมาตรฐาน</p>
+      <p class="rt-hint" id="hdrInterestPreview" style="margin:4px 0 0;color:var(--gold-bright);"></p>
+    </div>
     <p class="rt-hint">เลือกคำที่ต้องการในกล่องข้อความ แล้วกดปุ่ม "ตัวหนา" หรือเลือกสี — กดปุ่มเดิมซ้ำเพื่อยกเลิก หรือกด "ล้างรูปแบบ" เพื่อคืนค่าปกติ</p>
 
     <div class="field">
@@ -734,6 +899,22 @@
       <select id="svcCategory"></select>
     </div>
     <div class="field">
+      <label>สถานะบริการ</label>
+      <select id="svcAvailability">
+        <option value="">รับงานปกติ</option>
+        <option value="full">คิวเต็ม</option>
+        <option value="paused">ปิดรับชั่วคราว</option>
+      </select>
+    </div>
+    <div class="field">
+      <label>ป้ายเด่นบนการ์ด (แสดงเมื่อรับงานปกติ)</label>
+      <select id="svcBadgeSel">
+        <option value="">ไม่มี</option>
+        <option value="popular">ยอดนิยม</option>
+        <option value="recommended">แนะนำ</option>
+      </select>
+    </div>
+    <div class="field">
       <label>ชื่อบริการ</label>
       <div class="rt-toolbar" id="svcNameToolbar">
         <button type="button" class="rt-btn rt-bold-btn" data-rt-bold>B ตัวหนา</button>
@@ -763,6 +944,7 @@
         <input type="text" id="svcPrice" placeholder="เช่น 250 (เว้นว่างได้ถ้าไม่ระบุราคา)">
         <input type="text" id="svcUnit" placeholder="บาท / ตัว / รอบ (เว้นว่างได้)">
       </div>
+      <input type="text" id="svcOldPrice" placeholder="ราคาเดิม — แสดงเป็นตัวขีดฆ่าเหนือราคาจริง (เว้นว่างได้)" style="margin-top:8px;">
     </div>
 
     <div class="field">
@@ -874,6 +1056,7 @@ const firebaseConfig = {
 };
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
+let lastFbErrorCode = '';
 
 // Thin shim so the rest of the app's storage calls stay unchanged —
 // each "key" becomes one Firestore document in the "shopData" collection.
@@ -893,6 +1076,7 @@ async function fbSet(key, value){
     return { key, value };
   }catch(e){
     console.error('Firestore set error', key, e);
+    lastFbErrorCode = (e && e.code) || '';
     return null;
   }
 }
@@ -1029,21 +1213,20 @@ async function loadData(attempt){
   if(migrated) await saveData();
 
   // Eager-load all header background images (small, single global asset)
-  headerBgImagesCache = [];
-  for(const imgMeta of state.config.headerBgImages){
-    const dataUrl = await loadImageValue(headerBgImgKey(imgMeta.id));
-    if(dataUrl) headerBgImagesCache.push({ id: imgMeta.id, dataUrl });
-  }
+  const hdrLoaded = await Promise.all(state.config.headerBgImages.map(async imgMeta => ({
+    id: imgMeta.id, dataUrl: await loadImageValue(headerBgImgKey(imgMeta.id))
+  })));
+  headerBgImagesCache = hdrLoaded.filter(x => x.dataUrl);
   if(headerBgImagesCache.length !== state.config.headerBgImages.length){
     // some images were missing/deleted out-of-band — reconcile and save
     state.config.headerBgImages = headerBgImagesCache.map(x=>({id:x.id}));
     await saveData();
   }
-  // No auto-unlock: every fresh page load (refresh, reopen, new tab) always starts
-  // logged out. isAdmin only becomes true after submitting the password modal — see
-  // the pinConfirm handler. "จดจำรหัสผ่าน" there only autofills the password field.
+  // Admin mode is only unlocked by the password modal (see the pinConfirm handler); nothing stored here switches it on.
+  lastGoodState = JSON.stringify(state);
   render();
   hideBootLoader();
+  focusServiceFromHash();
 }
 function hideBootLoader(){
   const loader = document.getElementById('bootLoader');
@@ -1052,12 +1235,27 @@ function hideBootLoader(){
   setTimeout(()=> loader.remove(), 350);
 }
 
+function saveErrorMessage(){
+  return lastFbErrorCode === 'permission-denied'
+    ? 'บันทึกไม่สำเร็จ: บัญชีนี้ไม่มีสิทธิ์เขียนข้อมูล (ตรวจ Firestore Rules)'
+    : 'บันทึกไม่สำเร็จ ตรวจสอบอินเทอร์เน็ตแล้วลองใหม่';
+}
+let lastGoodState = ''; // JSON of the last shop data that was loaded from / accepted by the server
+async function commitSave(){
+  if(await saveData()) return true;
+  // The save was refused or failed: put the page back to what is really stored, instead of showing a change that never saved.
+  if(lastGoodState){ try{ state = JSON.parse(lastGoodState); render(); }catch(e){ console.error(e); } }
+  return false;
+}
 async function saveData(){
-  try{
-    await fbSet(STORAGE_KEY, JSON.stringify(state));
-  }catch(e){
-    console.error('บันทึกข้อมูลไม่สำเร็จ', e);
+  if(!isAdmin) return false; // only a signed-in admin writes; visitors just read
+  if(state && state.config){
+    state.config.updatedAt = Date.now();
   }
+  const r = await fbSet(STORAGE_KEY, JSON.stringify(state));
+  if(!r){ showToast(saveErrorMessage(), 'error'); return false; }
+  lastGoodState = JSON.stringify(state);
+  return true;
 }
 
 function uid(){ return Math.random().toString(36).slice(2,9); }
@@ -1078,8 +1276,9 @@ async function loadImageValue(key){
   }catch(e){ return ''; }
 }
 async function saveImageValue(key, dataUrl){
-  try{ await fbSet(key, dataUrl); return true; }
-  catch(e){ console.error('บันทึกรูปไม่สำเร็จ', e); return false; }
+  const r = await fbSet(key, dataUrl);
+  if(!r) console.error('บันทึกรูปไม่สำเร็จ', key);
+  return !!r;
 }
 async function deleteImageValue(key){
   try{ await fbDelete(key); }catch(e){ /* already gone, ignore */ }
@@ -1188,17 +1387,277 @@ async function checkAutoDeleteExpired(){
 async function autoDeleteService(id){
   const svc = state.services.find(s=>s.id===id);
   if(!svc) return;
+  if(!isAdmin){ // visitors can't write; just hide the expired promo on this page (the admin's session deletes it for real)
+    state.services = state.services.filter(s=>s.id!==id);
+    render();
+    return;
+  }
   if(svc.posterImages){
     for(const img of svc.posterImages){ await deleteImageValue(posterKey(id, img.id)); }
   }
   state.services = state.services.filter(s=>s.id!==id);
-  await saveData();
+  if(!(await commitSave())) return;
   render();
   if(isAdmin) showToast(`ลบ "${stripHtml(svc.name)}" อัตโนมัติเนื่องจากหมดเวลาโปรโมชั่น`);
 }
 
+/* ---------------- Confirm popup (replaces the browser's confirm box) ---------------- */
+let confirmResolver = null;
+function confirmDialog({ title, name, message, okText = 'ยืนยัน', cancelText = 'ยกเลิก', danger = false }){
+  return new Promise(resolve => {
+    if(confirmResolver) confirmResolver(false);
+    confirmResolver = resolve;
+    document.getElementById('confirmTitle').textContent = title || '';
+    const nameEl = document.getElementById('confirmName');
+    nameEl.textContent = name || '';
+    nameEl.style.display = name ? 'block' : 'none';
+    document.getElementById('confirmMsg').textContent = message || '';
+    const okBtn = document.getElementById('confirmOk');
+    const cancelBtn = document.getElementById('confirmCancel');
+    okBtn.textContent = okText;
+    okBtn.className = 'btn ' + (danger ? 'btn-danger-fill' : 'btn-primary');
+    cancelBtn.textContent = cancelText;
+    document.getElementById('confirmOverlay').classList.add('show');
+    (danger ? cancelBtn : okBtn).focus(); // for deletions the safe choice is focused first
+  });
+}
+function closeConfirm(result){
+  document.getElementById('confirmOverlay').classList.remove('show');
+  const r = confirmResolver;
+  confirmResolver = null;
+  if(r) r(result);
+}
+document.getElementById('confirmOk').addEventListener('click', () => closeConfirm(true));
+document.getElementById('confirmCancel').addEventListener('click', () => closeConfirm(false));
+document.getElementById('confirmOverlay').addEventListener('click', e => {
+  if(e.target.id === 'confirmOverlay') closeConfirm(false);
+});
+document.addEventListener('keydown', e => {
+  if(e.key === 'Escape' && document.getElementById('confirmOverlay').classList.contains('show')) closeConfirm(false);
+});
+
+/* ---------------- Availability status + "interested" button ---------------- */
+const AVAIL_LABELS = { full:'คิวเต็ม', paused:'ปิดรับชั่วคราว' };
+function svcAvail(s){ return AVAIL_LABELS[s && s.availability] ? s.availability : ''; }
+
+const DEFAULT_INTEREST_TPL = 'สนใจบริการ: {ชื่อ} ({ราคา})';
+function fillInterestTemplate(tpl, s){
+  const cat = state.categories.find(c => c.id === s.catId);
+  const name = stripHtml(s.name).trim();
+  const raw = String(s.price ?? '').trim();
+  const price = /^\d+(\.\d+)?$/.test(raw) ? Number(raw).toLocaleString('th-TH') : raw;
+  const priceText = `${price} ${s.unit || ''}`.trim();
+  return String(tpl || DEFAULT_INTEREST_TPL)
+    .replace(/\{ชื่อ\}/g, name)
+    .replace(/\{ราคา\}/g, priceText)
+    .replace(/\{หมวด\}/g, cat ? stripHtml(cat.name).trim() : '')
+    .replace(/\(\s*\)|（\s*）/g, '')   // no empty "( )" when a service has no price
+    .replace(/[ \t]{2,}/g, ' ')
+    .trim();
+}
+function interestText(s){ return fillInterestTemplate(state.config.interestTemplate, s); }
+async function copyText(text){
+  try{
+    if(navigator.clipboard && window.isSecureContext){ await navigator.clipboard.writeText(text); return true; }
+  }catch(e){ /* fall through to the legacy method */ }
+  try{
+    const ta = document.createElement('textarea');
+    ta.value = text; ta.setAttribute('readonly', '');
+    ta.style.cssText = 'position:fixed;top:-1000px;opacity:0;';
+    document.body.appendChild(ta); ta.select(); ta.setSelectionRange(0, text.length);
+    const ok = document.execCommand('copy');
+    ta.remove();
+    return ok;
+  }catch(e){ return false; }
+}
+function copyInterest(svcId){
+  const s = state.services.find(x => x.id === svcId);
+  if(!s) return;
+  const text = interestText(s);
+  // Both steps must start inside the click itself (before any await) or the browser may block the new tab.
+  const copying = copyText(text);
+  const contactUrl = document.querySelector('.contact-fab').href; // same link as the contact button
+  const win = window.open(contactUrl, '_blank'); // (not 'noopener' here: that always returns null and hides whether the tab opened)
+  if(win) win.opener = null;
+  copying.then(ok => {
+    if(ok){
+      showToast(win ? 'คัดลอกข้อความแล้ว กำลังเปิดหน้าติดต่อเจ้าของร้าน' : 'คัดลอกข้อความแล้ว กดปุ่มติดต่อสอบถามมุมขวาล่างเพื่อส่งข้อความ');
+    } else {
+      confirmDialog({ title: 'คัดลอกข้อความนี้ไปวางในแชท', name: text, okText: 'ปิด', cancelText: 'ยกเลิก' });
+    }
+  });
+}
+
+/* ---------------- Announcement, last-updated, highlight badge, shared links ---------------- */
+const BADGE_LABELS = { popular:'ยอดนิยม', recommended:'แนะนำ' };
+function svcHighlight(s){ return BADGE_LABELS[s && s.badge] ? s.badge : ''; }
+
+const ANNOUNCE_SPEED = 38; // px per second — slow, easy to read
+let announceShown = '';     // text the marquee is currently built for
+const ANNOUNCE_ICON = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 6.5a1 1 0 0 1 1-1h2.2L11.5 2.5v11L5.2 10.5H3a1 1 0 0 1-1-1v-3z"/><path d="M5.8 10.6l.7 2.6a.8.8 0 0 0 .8.6h.4"/><path d="M13.7 6v4"/></svg>';
+function buildAnnounceMarquee(text){
+  const track = document.getElementById('announceTrack');
+  const viewport = track.parentElement;
+  track.style.animation = 'none';
+  track.innerHTML = '';
+  const line = String(text).replace(/\s*\n+\s*/g, '  ·  ').trim();
+  // One single copy (megaphone + message) that enters from the right edge, crosses the bar and leaves on the left.
+  const item = document.createElement('span');
+  item.className = 'announce-item';
+  item.innerHTML = ANNOUNCE_ICON;
+  const label = document.createElement('span');
+  label.textContent = line;
+  item.appendChild(label);
+  track.appendChild(item);
+  const itemW = item.getBoundingClientRect().width;
+  const viewW = viewport.clientWidth;
+  if(!itemW || !viewW) return;
+  track.style.setProperty('--ann-start', viewW + 'px');
+  track.style.setProperty('--ann-w', itemW + 'px');
+  track.style.setProperty('--ann-dur', ((viewW + itemW) / ANNOUNCE_SPEED) + 's');
+  track.style.animation = '';
+  announceShown = line;
+}
+let announceResizeTimer = null;
+window.addEventListener('resize', () => {
+  clearTimeout(announceResizeTimer);
+  announceResizeTimer = setTimeout(() => {
+    const bar = document.getElementById('announceBar');
+    if(announceShown && bar.style.display !== 'none') buildAnnounceMarquee(announceShown);
+  }, 200);
+});
+if(document.fonts && document.fonts.ready){
+  document.fonts.ready.then(() => { // text width changes once the web font arrives
+    const bar = document.getElementById('announceBar');
+    if(announceShown && bar.style.display !== 'none') buildAnnounceMarquee(announceShown);
+  });
+}
+
+function todayStr(){
+  const d = new Date();
+  return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+}
+function announceExpired(a){ return !!(a && /^\d{4}-\d{2}-\d{2}$/.test(a.until || '') && todayStr() > a.until); }
+
+function renderAnnouncementAndFooter(){
+  const a = state.config.announcement;
+  const bar = document.getElementById('announceBar');
+  const on = !!(a && a.show && a.text && String(a.text).trim()) && !announceExpired(a);
+  bar.style.display = on ? 'flex' : 'none';
+  document.getElementById('announceText').textContent = on ? String(a.text) : '';
+  if(on) buildAnnounceMarquee(a.text);
+  else { announceShown = ''; document.getElementById('announceTrack').innerHTML = ''; }
+  const upd = document.getElementById('lastUpdated');
+  const t = Number(state.config.updatedAt);
+  if(t){
+    upd.textContent = 'อัปเดตล่าสุด ' + new Date(t).toLocaleDateString('th-TH', { day:'numeric', month:'short', year:'numeric' });
+    upd.style.display = 'block';
+  } else {
+    upd.style.display = 'none';
+  }
+}
+
+function serviceLink(id){ return location.href.split('#')[0] + '#' + id; }
+async function copyServiceLink(id){
+  const ok = await copyText(serviceLink(id));
+  if(ok) showToast('คัดลอกลิงก์บริการแล้ว เอาไปโพสต์ในกลุ่มได้เลย');
+  else prompt('คัดลอกลิงก์นี้:', serviceLink(id));
+}
+function categoryLink(id){ return location.href.split('#')[0] + '#cat-' + id; }
+async function copyCategoryLink(id){
+  const ok = await copyText(categoryLink(id));
+  if(ok) showToast('คัดลอกลิงก์หมวดหมู่แล้ว เอาไปโพสต์ในกลุ่มได้เลย');
+  else prompt('คัดลอกลิงก์นี้:', categoryLink(id));
+}
+function focusServiceFromHash(){
+  if(!state) return;
+  let id = '';
+  try{ id = decodeURIComponent((location.hash || '').slice(1)); }catch(e){ return; }
+  if(!id || !SAFE_ID_RE.test(id)) return;
+  if(id.startsWith('cat-')){ // link to a whole category: show just that category and scroll to it
+    const catId = id.slice(4);
+    const cat = state.categories.find(c => c.id === catId);
+    if(!cat) return;
+    if(activeCat !== cat.id){ activeCat = cat.id; render(); }
+    setTimeout(() => {
+      const sec = document.querySelector(`[data-cat-section="${catId}"]`);
+      if(!sec) return;
+      sec.scrollIntoView({ behavior:'smooth', block:'start' });
+      sec.classList.remove('flash-cat'); void sec.offsetWidth; sec.classList.add('flash-cat');
+      setTimeout(() => sec.classList.remove('flash-cat'), 2600);
+    }, 350);
+    return;
+  }
+  const svc = state.services.find(x => x.id === id);
+  if(!svc) return;
+  if(activeCat !== 'all' && activeCat !== svc.catId){ activeCat = 'all'; render(); }
+  setTimeout(() => {
+    const el = document.querySelector(`[data-svc-id="${id}"]`);
+    if(!el) return;
+    el.scrollIntoView({ behavior:'smooth', block:'center' });
+    el.classList.remove('flash'); void el.offsetWidth; el.classList.add('flash');
+    setTimeout(() => el.classList.remove('flash'), 2600);
+  }, 350);
+}
+window.addEventListener('hashchange', focusServiceFromHash);
+
+document.getElementById('editAnnounceBtn').addEventListener('click', () => {
+  const a = state.config.announcement || {};
+  document.getElementById('announceInput').value = a.text || '';
+  document.getElementById('announceShow').checked = a.show !== false;
+  document.getElementById('announceUntil').value = /^\d{4}-\d{2}-\d{2}$/.test(a.until || '') ? a.until : '';
+  document.getElementById('announceExpiredNote').style.display = announceExpired(a) ? 'block' : 'none';
+  document.getElementById('announceOverlay').classList.add('show');
+  document.getElementById('announceInput').focus();
+});
+document.getElementById('announceCancel').addEventListener('click', () => {
+  document.getElementById('announceOverlay').classList.remove('show');
+});
+document.getElementById('announceSave').addEventListener('click', async () => {
+  state.config.announcement = {
+    text: document.getElementById('announceInput').value.trim(),
+    show: document.getElementById('announceShow').checked,
+    until: document.getElementById('announceUntil').value || ''
+  };
+  const ok = await commitSave();
+  if(!ok) return;
+  document.getElementById('announceOverlay').classList.remove('show');
+  render();
+  if(ok) showToast('บันทึกประกาศเรียบร้อย');
+});
+
+/* ---------------- Fonts: load only the fonts actually in use ---------------- */
+const FONT_SPECS = {
+  'Prompt':'Prompt:wght@400;600;700',
+  'Noto Sans Thai':'Noto+Sans+Thai:wght@400;500;600;700',
+  'Noto Serif Thai':'Noto+Serif+Thai:wght@500;600;700',
+  'Kanit':'Kanit:wght@400;600;700',
+  'Mitr':'Mitr:wght@400;600;700',
+  'Chonburi':'Chonburi',
+  'Pattaya':'Pattaya',
+  'Itim':'Itim'
+};
+const loadedFonts = new Set(['Prompt']); // Prompt is loaded in <head> (base font of the site)
+function fontNameFromCss(v){ const m = /^\s*'([^']+)'/.exec(v || ''); return m ? m[1] : null; }
+function loadFonts(names){
+  const fresh = names.filter(n => FONT_SPECS[n] && !loadedFonts.has(n));
+  if(!fresh.length) return;
+  fresh.forEach(n => loadedFonts.add(n));
+  const link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = 'https://fonts.googleapis.com/css2?' + fresh.map(n => 'family=' + FONT_SPECS[n]).join('&') + '&display=swap';
+  document.head.appendChild(link);
+}
+function syncFonts(){
+  if(isAdmin){ loadFonts(Object.keys(FONT_SPECS)); return; } // admin can preview every font in the pickers
+  const used = [state.config.headerFont];
+  (state.services || []).forEach(sv => used.push(sv.font));
+  loadFonts(used.map(fontNameFromCss).filter(Boolean));
+}
+
 /* ---------------- Render ---------------- */
 function render(){
+  syncFonts();
   const titleEl = document.getElementById('siteTitle');
   const subEl = document.getElementById('siteSub');
   const font = state.config.headerFont || "'Prompt', sans-serif";
@@ -1222,7 +1681,10 @@ function render(){
   document.getElementById('fabIconOpen').style.display = isAdmin ? 'block' : 'none';
   document.getElementById('addCatBtn').style.display = isAdmin ? 'flex' : 'none';
   document.getElementById('editHeaderBtn').style.display = isAdmin ? 'inline-block' : 'none';
+  document.getElementById('editAnnounceBtn').style.display = isAdmin ? 'inline-block' : 'none';
+  if(isAdmin) updateBackupAge();
 
+  renderAnnouncementAndFooter();
   renderNav();
   renderBlocks();
   loadCardCoverThumbnails();
@@ -1265,7 +1727,7 @@ function renderBlocks(){
     const idx = state.categories.findIndex(c=>c.id===cat.id);
     const lastIdx = state.categories.length - 1;
     const svcs = state.services.filter(s=>s.catId===cat.id);
-    html += `<section class="cat-block">
+    html += `<section class="cat-block" data-cat-section="${cat.id}">
       <div class="cat-head">
         <div class="cat-title">
           <span class="dot" style="--el:${elColorVar(cat.color)}"></span>
@@ -1276,6 +1738,7 @@ function renderBlocks(){
           <button class="reorder-btn" data-moveup="${cat.id}" ${idx===0?'disabled':''} title="ย้ายขึ้น">↑</button>
           <button class="reorder-btn" data-movedown="${cat.id}" ${idx===lastIdx?'disabled':''} title="ย้ายลง">↓</button>
           <button class="edit-btn" data-editcat="${cat.id}">แก้ไข</button>
+          <button class="edit-btn" data-copycat="${cat.id}">คัดลอกลิงก์</button>
           <button class="del-btn" data-delcat="${cat.id}">ลบหมวดนี้</button>
         </div>` : ''}
       </div>
@@ -1289,24 +1752,32 @@ function renderBlocks(){
 
         const hasPoster = !!(s.posterImages && s.posterImages.length);
         const imgCount = hasPoster ? s.posterImages.length : 0;
-        html += `<div class="card ${hasPoster?'has-poster':''}" style="--el:${elColorVar(cat.color)}" data-svc-id="${s.id}" data-cat-id="${cat.id}" ${hasPoster?`data-poster="${s.id}"`:''}>
+        const avail = svcAvail(s);
+        const tagKey = avail || svcHighlight(s);
+        const tagLabel = avail ? AVAIL_LABELS[avail] : (BADGE_LABELS[tagKey] || '');
+        html += `<div class="card ${hasPoster?'has-poster':''} ${avail?'is-unavailable':''}" style="--el:${elColorVar(cat.color)}" data-svc-id="${s.id}" data-cat-id="${cat.id}" ${hasPoster?`data-poster="${s.id}"`:''}>
           ${isAdmin ? `<div class="drag-handle" draggable="true" data-drag-svc="${s.id}" data-drag-cat="${cat.id}" title="ลากเพื่อสลับตำแหน่งในหมวดนี้">⠿</div>` : ''}
           ${hasPoster ? `<div class="card-cover" data-cover-load="${s.id}">
             <div class="cover-skeleton"></div>
-            ${imgCount>1 ? `<span class="cover-badge">🖼 ${imgCount} รูป</span>` : `<span class="cover-badge">🔍 ดูรูปเต็ม</span>`}
+            ${imgCount>1 ? `<span class="cover-badge"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="5.5" y="2" width="8.5" height="8.5" rx="2"/><path d="M3.5 5.5v6a2 2 0 0 0 2 2h6"/></svg>${imgCount}</span>` : `<span class="cover-badge icon-only" aria-label="ดูรูปเต็ม"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.25"/><path d="M10.2 10.2L13.5 13.5"/></svg></span>`}
           </div>` : ''}
           <div class="card-content">
+            ${tagKey ? `<div class="status-badge ${tagKey}">${tagLabel}</div>` : ''}
             <div class="card-head-row">
               <h4 style="${nameStyleParts.join(';')}">${s.name}</h4>
               ${(formatPriceDisplay(s.price) || s.unit) ? `<div class="price-tag">
+                ${(String(s.oldPrice || '').trim() && formatPriceDisplay(s.price)) ? `<span class="old-price">${formatPriceDisplay(s.oldPrice)}</span>` : ''}
                 <span class="num" style="${svcPriceStyleParts(s).join(';')}">${formatPriceDisplay(s.price)}</span>
                 <span class="unit" style="${svcPriceStyleParts(s).join(';')}">${escapeHtml(s.unit||'')}</span>
               </div>` : ''}
             </div>
             ${s.countdownEndsAt && s.countdownEndsAt > Date.now() ? `<div class="countdown-badge" style="margin-top:0;margin-bottom:10px;" data-countdown-end="${s.countdownEndsAt}">⏱ --:--:--</div>` : ''}
             <p class="desc" style="${descStyleParts.join(';')}">${s.desc||''}</p>
+            ${(!isAdmin && !avail) ? `<button type="button" class="interest-btn" data-interest="${s.id}"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 2.5h10a1 1 0 0 1 1 1v6.5a1 1 0 0 1-1 1H8.5L5.5 13.5V11H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1z"/></svg><span class="interest-label">สนใจบริการนี้</span></button>` : ''}
             ${isAdmin ? `<div class="card-foot" style="margin-top:8px;">
               <button class="edit-btn" data-edit="${s.id}">แก้ไข</button>
+              <button class="edit-btn" data-copylink="${s.id}" title="คัดลอกลิงก์บริการนี้">ลิงก์</button>
+              <button class="edit-btn" data-dup="${s.id}">ทำซ้ำ</button>
               <button class="del-btn" data-del="${s.id}">ลบ</button>
             </div>` : ''}
           </div>
@@ -1326,11 +1797,23 @@ function renderBlocks(){
   container.querySelectorAll('[data-edit]').forEach(el=>{
     el.addEventListener('click', (e)=>{ e.stopPropagation(); openSvcModal(el.dataset.edit); });
   });
+  container.querySelectorAll('[data-copylink]').forEach(el=>{
+    el.addEventListener('click', (e)=>{ e.stopPropagation(); copyServiceLink(el.dataset.copylink); });
+  });
+  container.querySelectorAll('[data-dup]').forEach(el=>{
+    el.addEventListener('click', (e)=>{ e.stopPropagation(); duplicateService(el.dataset.dup); });
+  });
+  container.querySelectorAll('[data-interest]').forEach(el=>{
+    el.addEventListener('click', (e)=>{ e.stopPropagation(); copyInterest(el.dataset.interest); });
+  });
   container.querySelectorAll('[data-del]').forEach(el=>{
     el.addEventListener('click', (e)=>{ e.stopPropagation(); deleteService(el.dataset.del); });
   });
   container.querySelectorAll('[data-delcat]').forEach(el=>{
     el.addEventListener('click', ()=>deleteCategory(el.dataset.delcat));
+  });
+  container.querySelectorAll('[data-copycat]').forEach(el=>{
+    el.addEventListener('click', ()=>copyCategoryLink(el.dataset.copycat));
   });
   container.querySelectorAll('[data-editcat]').forEach(el=>{
     el.addEventListener('click', ()=>openCatModal(el.dataset.editcat));
@@ -1343,7 +1826,7 @@ function renderBlocks(){
   });
   container.querySelectorAll('[data-poster]').forEach(el=>{
     el.addEventListener('click', (e)=>{
-      if(e.target.closest('.edit-btn, .del-btn, .drag-handle')) return;
+      if(e.target.closest('.edit-btn, .del-btn, .drag-handle, .interest-btn')) return;
       openPoster(el.dataset.poster);
     });
   });
@@ -1401,7 +1884,7 @@ async function reorderServiceDrop(draggedId, targetId){
   state.services.splice(fromIdx, 1);
   const toIdx = state.services.indexOf(target);
   state.services.splice(toIdx, 0, dragged);
-  await saveData();
+  if(!(await commitSave())) return;
   render();
 }
 
@@ -1412,7 +1895,7 @@ async function moveCategory(id, dir){
   const tmp = state.categories[idx];
   state.categories[idx] = state.categories[swapIdx];
   state.categories[swapIdx] = tmp;
-  await saveData();
+  if(!(await commitSave())) return;
   render();
 }
 
@@ -1475,7 +1958,8 @@ async function showPosterFrame(index){
   }
   if(dataUrl){
     img.src = dataUrl;
-    img.alt = 'โปสเตอร์บริการ';
+    const altSvc = state.services.find(x=>x.id===posterActiveSvcId);
+    img.alt = altSvc ? ('โปสเตอร์ ' + stripHtml(altSvc.name).trim()) : 'โปสเตอร์บริการ';
   }
   loading.style.display = 'none';
   img.style.opacity = '1';
@@ -1495,58 +1979,64 @@ document.getElementById('posterOverlay').addEventListener('click', (e)=>{
 
 const cardAutoTimers = new Map(); // svcId -> intervalId, for homepage card auto-advance
 
-async function loadCardCoverThumbnails(){
-  cardAutoTimers.forEach(t => clearInterval(t));
-  cardAutoTimers.clear();
+// Cover images: loaded in parallel, and only for cards that are on screen or about to be (the rest load as you scroll).
+let coverObserver = null;
+async function loadCoverFor(node){
+  const svcId = node.dataset.coverLoad;
+  const svc = state.services.find(s=>s.id===svcId);
+  if(!svc || !svc.posterImages || !svc.posterImages.length) return;
+  const fetchOne = async (meta) => {
+    const cacheKey = `${svcId}:${meta.id}`;
+    let dataUrl = coverThumbCache.get(cacheKey);
+    if(!dataUrl){
+      dataUrl = await loadImageValue(posterKey(svcId, meta.id));
+      if(dataUrl) coverThumbCache.set(cacheKey, dataUrl);
+    }
+    return dataUrl;
+  };
+  const altText = escapeAttr(stripHtml(svc.name));
 
-  const nodes = document.querySelectorAll('[data-cover-load]');
-  for(const node of nodes){
-    const svcId = node.dataset.coverLoad;
-    const svc = state.services.find(s=>s.id===svcId);
-    if(!svc || !svc.posterImages || !svc.posterImages.length) continue;
-
-    if(svc.posterAutoAdvance && svc.posterImages.length > 1){
-      const frames = [];
-      for(const meta of svc.posterImages){
-        const cacheKey = `${svcId}:${meta.id}`;
-        let dataUrl = coverThumbCache.get(cacheKey);
-        if(!dataUrl){
-          dataUrl = await loadImageValue(posterKey(svcId, meta.id));
-          if(dataUrl) coverThumbCache.set(cacheKey, dataUrl);
-        }
-        if(dataUrl) frames.push(dataUrl);
-      }
-      if(!frames.length || !document.body.contains(node)) continue;
-      let frameIdx = 0;
+  if(svc.posterAutoAdvance && svc.posterImages.length > 1){
+    const frames = (await Promise.all(svc.posterImages.map(fetchOne))).filter(Boolean);
+    if(!frames.length || !document.body.contains(node)) return;
+    let frameIdx = 0;
+    const badge = node.querySelector('.cover-badge');
+    const drawFrame = ()=>{
+      node.innerHTML = `<img src="${frames[frameIdx]}" alt="${altText}">`;
+      if(badge) node.appendChild(badge);
+    };
+    drawFrame();
+    if(frames.length > 1){
+      const timer = setInterval(()=>{
+        if(!document.body.contains(node)){ clearInterval(timer); cardAutoTimers.delete(svcId); return; }
+        frameIdx = (frameIdx + 1) % frames.length;
+        drawFrame();
+      }, (svc.posterInterval || 4) * 1000);
+      cardAutoTimers.set(svcId, timer);
+    }
+  } else {
+    const dataUrl = await fetchOne(svc.posterImages[0]);
+    if(dataUrl && document.body.contains(node)){
       const badge = node.querySelector('.cover-badge');
-      const drawFrame = ()=>{
-        node.innerHTML = `<img src="${frames[frameIdx]}" alt="">`;
-        if(badge) node.appendChild(badge);
-      };
-      drawFrame();
-      if(frames.length > 1){
-        const timer = setInterval(()=>{
-          if(!document.body.contains(node)){ clearInterval(timer); cardAutoTimers.delete(svcId); return; }
-          frameIdx = (frameIdx + 1) % frames.length;
-          drawFrame();
-        }, (svc.posterInterval || 4) * 1000);
-        cardAutoTimers.set(svcId, timer);
-      }
-    } else {
-      const coverMeta = svc.posterImages[0];
-      const cacheKey = `${svcId}:${coverMeta.id}`;
-      let dataUrl = coverThumbCache.get(cacheKey);
-      if(!dataUrl){
-        dataUrl = await loadImageValue(posterKey(svcId, coverMeta.id));
-        if(dataUrl) coverThumbCache.set(cacheKey, dataUrl);
-      }
-      if(dataUrl && document.body.contains(node)){
-        const badge = node.querySelector('.cover-badge');
-        node.innerHTML = `<img src="${dataUrl}" alt="">`;
-        if(badge) node.appendChild(badge);
-      }
+      node.innerHTML = `<img src="${dataUrl}" alt="${altText}">`;
+      if(badge) node.appendChild(badge);
     }
   }
+}
+function loadCardCoverThumbnails(){
+  cardAutoTimers.forEach(t => clearInterval(t));
+  cardAutoTimers.clear();
+  if(coverObserver){ coverObserver.disconnect(); coverObserver = null; }
+  const nodes = Array.from(document.querySelectorAll('[data-cover-load]'));
+  if(!('IntersectionObserver' in window)){ nodes.forEach(n => loadCoverFor(n)); return; }
+  coverObserver = new IntersectionObserver(entries => {
+    entries.forEach(en => {
+      if(!en.isIntersecting) return;
+      coverObserver.unobserve(en.target);
+      loadCoverFor(en.target);
+    });
+  }, { rootMargin: '500px 0px' });
+  nodes.forEach(n => coverObserver.observe(n));
 }
 
 function renderSvcCategoryOptions(){
@@ -1767,14 +2257,155 @@ function exitAdmin(){
   showToast('ออกจากโหมดแก้ไขแล้ว');
 }
 
+/* ---------------- Backup / Restore (admin) ---------------- */
+const SAFE_ID_RE = /^[A-Za-z0-9_-]+$/;
+
+const BACKUP_KEY = 'pk_last_backup'; // when this browser last made a complete backup
+function backupDaysAgo(){
+  let t = 0;
+  try{ t = Number(localStorage.getItem(BACKUP_KEY)) || 0; }catch(e){}
+  return t ? Math.max(0, Math.floor((Date.now() - t) / 86400000)) : null;
+}
+function updateBackupAge(){
+  const el = document.getElementById('backupAge');
+  if(!el) return;
+  const d = backupDaysAgo();
+  let text, warn = false;
+  if(d === null){ text = 'ยังไม่เคยสำรองในเครื่องนี้'; warn = true; }
+  else if(d === 0){ text = 'สำรองล่าสุดวันนี้'; }
+  else { text = `สำรองล่าสุด ${d} วันที่แล้ว`; warn = d > 7; }
+  el.textContent = text;
+  el.classList.toggle('warn', warn);
+}
+function remindBackupIfStale(){
+  const d = backupDaysAgo();
+  if(d === null) showToast('ยังไม่เคยสำรองข้อมูลเลย แนะนำให้กด "สำรองข้อมูล" เก็บไว้', 'error');
+  else if(d > 7) showToast(`ไม่ได้สำรองข้อมูลมา ${d} วันแล้ว แนะนำให้กด "สำรองข้อมูล"`, 'error');
+}
+
+function backupFileName(){
+  const d = new Date();
+  const p = n => String(n).padStart(2,'0');
+  return `pakanang-backup-${d.getFullYear()}-${p(d.getMonth()+1)}-${p(d.getDate())}.json`;
+}
+
+function collectImageKeys(st){
+  const keys = [];
+  (st.config.headerBgImages || []).forEach(im => keys.push(headerBgImgKey(im.id)));
+  (st.services || []).forEach(s => (s.posterImages || []).forEach(im => keys.push(posterKey(s.id, im.id))));
+  return keys;
+}
+
+async function exportBackup(){
+  const btn = document.getElementById('backupBtn');
+  const oldLabel = btn.textContent;
+  btn.disabled = true; btn.textContent = 'กำลังสำรอง...';
+  try{
+    const st = JSON.parse(JSON.stringify(state));
+    delete st.config.pinHash; // ไม่เก็บรหัสผ่านแอดมินลงไฟล์สำรอง
+    const keys = collectImageKeys(st);
+    const images = {};
+    for(const key of keys){
+      const v = await loadImageValue(key);
+      if(v) images[key] = v;
+    }
+    const payload = { app:'pakanang-shop-backup', version:1, exportedAt:new Date().toISOString(), state:st, images };
+    const blob = new Blob([JSON.stringify(payload)], { type:'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = backupFileName();
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(()=> URL.revokeObjectURL(url), 4000);
+    const missing = keys.length - Object.keys(images).length;
+    if(missing > 0) showToast(`สำรองแล้ว แต่ขาดรูป ${missing} รูป (โหลดไม่สำเร็จ)`, 'error');
+    else {
+      try{ localStorage.setItem(BACKUP_KEY, String(Date.now())); }catch(e){}
+      updateBackupAge();
+      showToast(`สำรองข้อมูลแล้ว (${Object.keys(images).length} รูป)`);
+    }
+  }catch(e){
+    console.error('สำรองข้อมูลไม่สำเร็จ', e);
+    showToast('สำรองข้อมูลไม่สำเร็จ', 'error');
+  }finally{
+    btn.disabled = false; btn.textContent = oldLabel;
+  }
+}
+
+async function importBackup(file){
+  try{
+    let payload;
+    try{ payload = JSON.parse(await file.text()); }catch(e){ payload = null; }
+    const st = payload && payload.state;
+    const valid = payload && payload.app === 'pakanang-shop-backup' && st && st.config
+      && Array.isArray(st.categories) && Array.isArray(st.services)
+      && st.categories.every(c => SAFE_ID_RE.test(String(c.id)))
+      && st.services.every(s => SAFE_ID_RE.test(String(s.id))
+        && (s.posterImages || []).every(im => im.id == null || SAFE_ID_RE.test(String(im.id))))
+      && (st.config.headerBgImages || []).every(im => im.id == null || SAFE_ID_RE.test(String(im.id)));
+    if(!valid){ showToast('ไฟล์สำรองไม่ถูกต้อง', 'error'); return; }
+
+    const images = payload.images || {};
+    const ok = await confirmDialog({
+      title: 'กู้คืนข้อมูลจากไฟล์นี้?',
+      message: `หมวดหมู่ ${st.categories.length} · บริการ ${st.services.length} · รูป ${Object.keys(images).length}\n\n` +
+        'ข้อมูลร้านปัจจุบันจะถูกแทนที่ (รหัสผ่านแอดมินไม่เปลี่ยน)\nแนะนำให้กด "สำรองข้อมูล" เก็บของปัจจุบันไว้ก่อน',
+      okText: 'กู้คืนข้อมูล'
+    });
+    if(!ok) return;
+
+    st.config.title = sanitizeRichHtml(st.config.title || '', false);
+    st.config.sub = sanitizeRichHtml(st.config.sub || '', false);
+    st.categories.forEach(c => { c.name = sanitizeRichHtml(c.name || '', false); });
+    st.services.forEach(s => {
+      s.name = sanitizeRichHtml(s.name || '', false);
+      s.desc = sanitizeRichHtml(s.desc || '', true);
+    });
+    st.config.pinHash = state.config.pinHash;
+    st.config.updatedAt = Date.now();
+
+    showToast('กำลังกู้คืนข้อมูล...');
+    for(const [key, val] of Object.entries(images)){
+      // รับเฉพาะคีย์รูปเท่านั้น กันไม่ให้ไฟล์สำรองไปเขียนทับข้อมูลหลักโดยตรง
+      const isImageKey = /^genshin_(poster_img|header_bg_img)[A-Za-z0-9_-]*$/.test(key);
+      if(!isImageKey || typeof val !== 'string' || !val.startsWith('data:image/')) continue;
+      const r = await fbSet(key, val);
+      if(!r) throw new Error('บันทึกรูปไม่สำเร็จ: ' + key);
+    }
+    const saved = await fbSet(STORAGE_KEY, JSON.stringify(st));
+    if(!saved) throw new Error('บันทึกข้อมูลหลักไม่สำเร็จ');
+    showToast('กู้คืนข้อมูลเรียบร้อย กำลังรีเฟรชหน้า...');
+    setTimeout(()=> location.reload(), 1200);
+  }catch(e){
+    console.error('กู้คืนข้อมูลไม่สำเร็จ', e);
+    showToast('กู้คืนข้อมูลไม่สำเร็จ ลองใหม่อีกครั้ง', 'error');
+  }
+}
+
+document.getElementById('backupBtn').addEventListener('click', exportBackup);
+document.getElementById('restoreBtn').addEventListener('click', ()=> document.getElementById('restoreFile').click());
+document.getElementById('restoreFile').addEventListener('change', e => {
+  const f = e.target.files[0];
+  e.target.value = '';
+  if(f) importBackup(f);
+});
+
 /* ---------------- Header edit ---------------- */
 let hdrBgImages = [];     // working copy of [{id, dataUrl}] while modal is open
 let hdrBgOriginalIds = []; // ids present when modal opened, to diff on save
+
+function updateInterestPreview(){
+  const el = document.getElementById('hdrInterestPreview');
+  const sample = state.services[0];
+  el.textContent = sample ? 'ตัวอย่าง: ' + fillInterestTemplate(document.getElementById('hdrInterestTpl').value.trim(), sample) : '';
+}
+document.getElementById('hdrInterestTpl').addEventListener('input', updateInterestPreview);
 
 async function openHeaderModal(){
   const titleField = document.getElementById('hdrTitleInput');
   const subField = document.getElementById('hdrSubInput');
   document.getElementById('hdrFont').value = state.config.headerFont || "'Prompt', sans-serif";
+  document.getElementById('hdrInterestTpl').value = state.config.interestTemplate || '';
+  updateInterestPreview();
   setEditableContent(titleField, state.config.title || '');
   setEditableContent(subField, state.config.sub || '');
 
@@ -1856,6 +2487,7 @@ document.getElementById('headerSave').addEventListener('click', async ()=>{
   state.config.title = sanitizeRichHtml(titleField.innerHTML, false);
   state.config.sub = sanitizeRichHtml(subField.innerHTML, false);
   state.config.headerFont = document.getElementById('hdrFont').value;
+  state.config.interestTemplate = document.getElementById('hdrInterestTpl').value.trim().slice(0, 200);
   state.config.headerBlur = Number(document.getElementById('hdrBlurRange').value);
   state.config.headerAutoAdvance = document.getElementById('hdrBgAutoBtn').classList.contains('active');
   state.config.headerInterval = Number(document.getElementById('hdrBgIntervalRange').value);
@@ -1872,7 +2504,7 @@ document.getElementById('headerSave').addEventListener('click', async ()=>{
   headerBgImagesCache = hdrBgImages.map(x=>({id:x.id, dataUrl:x.dataUrl}));
   headerBgCurrentIndex = 0;
 
-  await saveData();
+  if(!(await commitSave())) return;
   document.getElementById('headerOverlay').classList.remove('show');
   render();
   showToast('บันทึกหัวข้อร้านเรียบร้อย');
@@ -1921,6 +2553,7 @@ document.getElementById('pinConfirm').addEventListener('click', async ()=>{
     document.getElementById('pinOverlay').classList.remove('show');
     render();
     showToast('เข้าสู่โหมดแก้ไขสำเร็จ');
+    setTimeout(remindBackupIfStale, 1800);
   } else {
     document.getElementById('pinHint').textContent = 'รหัสผ่านไม่ถูกต้อง ลองอีกครั้ง';
     document.getElementById('pinHint').style.color = '#f2622e';
@@ -2034,7 +2667,10 @@ async function openSvcModal(svcId, presetCatId){
   setEditableContent(descField, svc ? svc.desc : '');
   document.getElementById('svcPrice').value = svc ? svc.price : '';
   document.getElementById('svcUnit').value = svc ? svc.unit : '';
+  document.getElementById('svcOldPrice').value = svc ? (svc.oldPrice || '') : '';
   document.getElementById('svcFont').value = svc ? (svc.font||'') : "'Prompt', sans-serif";
+  document.getElementById('svcAvailability').value = svc ? svcAvail(svc) : '';
+  document.getElementById('svcBadgeSel').value = svc ? svcHighlight(svc) : '';
   document.getElementById('svcPriceBoldBtn').classList.toggle('active', svc ? !!svc.priceBold : false);
   document.getElementById('svcPriceColor').value = svc && svc.priceColor ? svc.priceColor : '#f2cf8e';
   priceColorCleared = false;
@@ -2120,7 +2756,10 @@ document.getElementById('svcSave').addEventListener('click', async ()=>{
   const desc = sanitizeRichHtml(descField.innerHTML, true);
   const price = document.getElementById('svcPrice').value.trim();
   const unit = document.getElementById('svcUnit').value.trim();
+  const oldPrice = document.getElementById('svcOldPrice').value.trim();
   const font = document.getElementById('svcFont').value;
+  const availability = document.getElementById('svcAvailability').value;
+  const badge = document.getElementById('svcBadgeSel').value;
   const priceBold = document.getElementById('svcPriceBoldBtn').classList.contains('active');
   const priceColor = priceColorCleared ? '' : document.getElementById('svcPriceColor').value;
   priceColorCleared = false;
@@ -2143,7 +2782,7 @@ document.getElementById('svcSave').addEventListener('click', async ()=>{
   const posterImages = svcPosterImages.map(x=>({id:x.id}));
 
   const countdownAutoDelete = document.getElementById('svcCountdownAutoDeleteBtn').classList.contains('active');
-  const payload = { name, catId, desc, price, unit, posterImages, posterAutoAdvance, posterInterval, font, priceBold, priceColor, countdownEndsAt: svcCountdownEndsAt, countdownAutoDelete };
+  const payload = { name, catId, desc, price, unit, oldPrice, posterImages, posterAutoAdvance, posterInterval, font, availability, badge, priceBold, priceColor, countdownEndsAt: svcCountdownEndsAt, countdownAutoDelete };
   const wasNew = isNewSvcEntry;
 
   if(!isNewSvcEntry){
@@ -2152,19 +2791,59 @@ document.getElementById('svcSave').addEventListener('click', async ()=>{
   } else {
     state.services.push({ id:editingSvcId, ...payload });
   }
-  await saveData();
+  if(!(await commitSave())) return;
   document.getElementById('svcOverlay').classList.remove('show');
   render();
   showToast(wasNew ? 'เพิ่มบริการเรียบร้อย' : 'บันทึกการแก้ไขเรียบร้อย');
 });
 
+async function duplicateService(id){
+  const src = state.services.find(s=>s.id===id);
+  if(!src) return;
+  const newId = uid();
+  const copy = JSON.parse(JSON.stringify(src));
+  copy.id = newId;
+  copy.name = (src.name || '') + ' (สำเนา)';
+  delete copy.countdownEndsAt;      // a copy should not inherit a running timer
+  delete copy.countdownAutoDelete;
+  showToast('กำลังทำซ้ำบริการ...');
+  const metas = [];
+  const savedKeys = [];
+  for(const m of (src.posterImages || [])){
+    const val = await loadImageValue(posterKey(id, m.id));
+    if(!val) continue;
+    const nm = { id: m.id || uid() };
+    const key = posterKey(newId, nm.id);
+    if(!(await saveImageValue(key, val))){
+      for(const k of savedKeys) await deleteImageValue(k);
+      showToast('ทำซ้ำบริการไม่สำเร็จ', 'error');
+      return;
+    }
+    savedKeys.push(key); metas.push(nm);
+  }
+  copy.posterImages = metas;
+  const idx = state.services.findIndex(s=>s.id===id);
+  state.services.splice(idx + 1, 0, copy);
+  if(!(await commitSave())){ for(const k of savedKeys) await deleteImageValue(k); return; }
+  render();
+  showToast('ทำซ้ำบริการแล้ว แก้ไขรายละเอียดต่อได้เลย');
+  openSvcModal(newId);
+}
+
 async function deleteService(id){
   const svc = state.services.find(s=>s.id===id);
+  const svcLabel = svc ? stripHtml(svc.name).trim() : '';
+  const okDel = await confirmDialog({
+    title: 'ลบบริการนี้?', name: svcLabel,
+    message: 'รูปโปสเตอร์ของบริการนี้จะถูกลบด้วย\nถ้าเคยกด "สำรองข้อมูล" ไว้ สามารถกู้คืนจากไฟล์สำรองได้',
+    okText: 'ลบบริการ', danger: true
+  });
+  if(!okDel) return;
   if(svc && svc.posterImages){
     for(const img of svc.posterImages){ await deleteImageValue(posterKey(id, img.id)); }
   }
   state.services = state.services.filter(s=>s.id!==id);
-  await saveData();
+  if(!(await commitSave())) return;
   render();
   showToast('ลบบริการเรียบร้อย');
 }
@@ -2202,7 +2881,7 @@ document.getElementById('catSave').addEventListener('click', async ()=>{
   } else {
     state.categories.push({ id:uid(), name, color });
   }
-  await saveData();
+  if(!(await commitSave())) return;
   document.getElementById('catOverlay').classList.remove('show');
   render();
   showToast(editingCatId ? 'บันทึกหมวดหมู่เรียบร้อย' : 'เพิ่มหมวดหมู่เรียบร้อย');
@@ -2214,9 +2893,15 @@ async function deleteCategory(id){
     showToast('ลบไม่ได้: หมวดนี้ยังมีบริการอยู่ กรุณาลบหรือย้ายบริการออกก่อน', 'error');
     return;
   }
+  const catObj = state.categories.find(c=>c.id===id);
+  const okDelCat = await confirmDialog({
+    title: 'ลบหมวดหมู่นี้?', name: catObj ? stripHtml(catObj.name).trim() : '',
+    okText: 'ลบหมวดหมู่', danger: true
+  });
+  if(!okDelCat) return;
   state.categories = state.categories.filter(c=>c.id!==id);
   if(activeCat===id) activeCat='all';
-  await saveData();
+  if(!(await commitSave())) return;
   render();
   showToast('ลบหมวดหมู่เรียบร้อย');
 }
